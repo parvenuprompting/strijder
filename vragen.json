@@ -1,24 +1,1411 @@
 {
-  "versie": "fase-1",
-  "jaar": "2026",
-  "hoofdstukken": ["gevarenherkenning", "kennis", "inzicht"],
-  "vragen": [
-    {"id": "gh-001", "hoofdstuk": "gevarenherkenning", "moeilijkheid": 1, "vraag": "Je fietst langs een geparkeerde auto waarvan de bestuurder net instapt. Wat doe je?", "opties": ["Doorfietsen met dezelfde snelheid", "Uitwijken en afstand nemen", "Belren en doorgaan", "Zo dicht mogelijk bij de auto blijven"], "juist": 1, "uitleg": "Een bestuurder die instapt, kan op elk moment de deur openen of wegrijden. Uitwijken en afstand nemen geeft je ruimte om te reageren."},
-    {"id": "gh-002", "hoofdstuk": "gevarenherkenning", "moeilijkheid": 2, "vraag": "Het regent hard en je rijdt 80 km/u op de snelweg. Wat is het grootste risico?", "opties": ["AQUAPLANING — je banden raken grip kwijt", "Je motor oververhit raakt", "Je ruitenwissers slijten", "Je verbruik stijgt"], "juist": 0, "uitleg": "Bij veel regen kan er een waterfilm tussen band en weg ontstaan: aquaplaning. Je stuurt dan niet meer. Snelheid verminderen is de oplossing."},
-    {"id": "gh-003", "hoofdstuk": "gevarenherkenning", "moeilijkheid": 1, "vraag": "Een kind loopt met een bal langs de straat. Wat verwacht je?", "opties": ["Niets bijzonders", "Dat het kind de bal achterna de straat op kan rennen", "Dat het kind terug naar huis loopt", "Dat er een volwassene komt"], "juist": 1, "uitleg": "Kinderen zijn onvoorspelbaar. Een bal die de straat op rolt is een klassiek gevaarscenario: het kind rent erachteraan zonder te kijken."},
-    {"id": "gh-004", "hoofdstuk": "gevarenherkenning", "moeilijkheid": 2, "vraag": "Je nader een kruispunt met 'stop' je moet volledig stoppen. Waarom is dat belangrijk zelfs als je niets ziet?", "opties": ["Omdat stoppen bij een bord altijd verplicht is", "Omdat je motor anders afslaat", "Omdat je anders te snel bent", "Omdat het舒适er rijdt"], "juist": 0, "uitleg": "Een stopbord verplicht tot volledige stop, ongeacht of je verkeer ziet. Kijkend oversteken zonder te stoppen is een fout die gezakt wordt."},
-    {"id": "gh-005", "hoofdstuk": "gevarenherkenning", "moeilijkheid": 3, "vraag": "Je rijdt achter een vrachtwagen die langzaam gaat. Je wilt inhalen. Wat zie je mogelijk niet?", "opties": ["De remlichten van de vrachtwagen", "Tegenliggers achter de vrachtwagen", "De snelheidslimiet", "Je eigen blindhoek"], "juist": 1, "uitleg": "De vrachtwagen blokkeert je zicht op tegenliggers. Inhalen zonder volledig zicht op de tegenrijbaan is levensgevaarlijk."},
-
-    {"id": "kn-001", "hoofdstuk": "kennis", "moeilijkheid": 1, "vraag": "Wat betekent een geel kentekenbewijs?", "opties": ["Het voertuig is oud", "Het is een personenauto", "Het voertuig is verzekerd", "Het is een brommer/snorfiets"], "juist": 1, "uitleg": "Geel kentekenbewijs = personenauto. Groen = brommer/snorfiets. Dit is basiskennis die op het examen gevraagd kan worden."},
-    {"id": "kn-002", "hoofdstuk": "kennis", "moeilijkheid": 1, "vraag": "Wat is de maximale toegestane alcohol-concentratie voor beginnende bestuurders (5 jaar of minder rijbewijs)?", "opties": ["0,5 promille", "0,2 promille", "0,0 promille", "0,8 promille"], "juist": 1, "uitleg": "Beginnende bestuurders (rijbewijs < 5 jaar) mogen maximaal 0,2 promille hebben — strenger dan de normale 0,5."},
-    {"id": "kn-003", "hoofdstuk": "kennis", "moeilijkheid": 2, "vraag": "Binnen de bebouwde kom is de maximumsnelheid voor personenauto's...", "opties": ["30 km/u", "50 km/u", "60 km/u", "80 km/u"], "juist": 1, "uitleg": "Standaard binnen de bebouwde kom: 50 km/u, tenzij anders aangegeven. Let op: steeds meer 30 km/zones!"},
-    {"id": "kn-004", "hoofdstuk": "kennis", "moeilijkheid": 2, "vraag": "Wanneer moet je je kenteken bewijzen kunnen tonen?", "opties": ["Alleen bij controle", "Altijd in het voertuig aanwezig zijn", "Alleen bij verkoop", "Nooit, digitaal genoeg"], "juist": 1, "uitleg": "Het kentekenbewijs (of het digitale alternatief) moet altijd in het voertuig aanwezig zijn tijdens het rijden."},
-    {"id": "kn-005", "hoofdstuk": "kennis", "moeilijkheid": 1, "vraag": "Wat betekent een stilstaande schoolbus met geventileerde lichten?", "opties": ["Niets bijzonders", "Kinderen kunnen oversteken — extra oppassen", "De bestuurder pauzeert", "De bus heeft pech"], "juist": 1, "uitleg": "In Nederland (anders dan VS) is schoolbus-specifieke regel beperkt, maar het principe: kinderen rond voertuigen = extra voorzichtigheid."},
-
-    {"id": "in-001", "hoofdstuk": "inzicht", "moeilijkheid": 2, "vraag": "Je wilt rechtsafslag op een kruispunt. Er loopt een fietser rechts naast je. Wat doe je?", "opties": ["Gewoon afslaan, jij hebt voorrang", "Even naast de fietser blijven rijden tot hij voorbij is", "Extra rechts-kijk en de fietser voorlaten", "Hard remmen"], "juist": 2, "uitleg": "Bij rechtsafslaan is de fietser naast je je grootste risico ('de dode hoek rechts'). Laat hem doorgaan en kijk extra goed over je rechterschouder."},
-    {"id": "in-002", "hoofdstuk": "inzicht", "moeilijkheid": 1, "vraag": "Op een smalle brug met tegenliggers: wie heeft voorrang?", "opties": ["Degene die het dichtstbij is", "Degene die kan wachten op een uitwijkplek", "Grote voertuigen altijd", "Rechts heeft voorrang"], "juist": 1, "uitleg": "Bij obstakels op je eigen helft moet jij uitwijken/wachten. Degene die gemakkelijk kan wachten geeft voorrang aan degene die het moeilijker heeft."},
-    {"id": "in-003", "hoofdstuk": "inzicht", "moeilijkheid": 2, "vraag": "Je bent moe na een lange dag. Je moet nog 30 minuten rijden. Wat is het beste?", "opties": ["Doorrijden, zo snel mogelijk thuis zijn", "Even stoppen, korte wandeling, dan verder", "Sneller rijden om eerder thuis te zijn", "Luid muziek aanzetten"], "juist": 1, "uitleg": "Vermoeidheid is een van de grootste oorzaken van ongelukken. Korte pauze met frisse lucht helpt echt; sneller rijden verhoogt het risico."},
-    {"id": "in-004", "hoofdstuk": "inzicht", "moeilijkheid": 3, "vraag": "Op een gladde weg (ijzel) moet je plotseling stoppen. Wat doe je?", "opties": ["Hard op de rem", "Pompend remmen (ABS doet dit al) en gas los", "Handrem trekken", "Schakelen naar achteruit"], "juist": 1, "uitleg": "Bij ABS: volledig remmen en ABS laat pompen. Zonder ABS: pompend remmen. Gas loslaat helpt de auto te stabiliseren."},
-    {"id": "in-005", "hoofdstuk": "inzicht", "moeilijkheid": 1, "vraag": "Je ziet een ouder iemand moeilijk oversteken bij een zebrapad. Wat is het juiste?", "opties": ["Snel doorgaan vóór hij begint", "Stoppen en hem laten oversteken, ook als hij nog niet begonnen is", "Claxonneren zodat hij weet dat je er bent", "Langs hem rijden"], "juist": 1, "uitleg": "Op een zebrapad hebben voetgangers voorrang. Extra geduld met ouderen is zowel verplicht als menselijk."}
-  ]
+ "versie": "fase-1",
+ "jaar": "2026",
+ "hoofdstukken": [
+  "gevarenherkenning",
+  "kennis",
+  "inzicht"
+ ],
+ "vragen": [
+  {
+   "id": "gh-001",
+   "hoofdstuk": "gevarenherkenning",
+   "moeilijkheid": 1,
+   "vraag": "Je fietst langs een geparkeerde auto waarvan de bestuurder net instapt. Wat doe je?",
+   "opties": [
+    "Doorfietsen met dezelfde snelheid",
+    "Uitwijken en afstand nemen",
+    "Belren en doorgaan",
+    "Zo dicht mogelijk bij de auto blijven"
+   ],
+   "juist": 1,
+   "uitleg": "Een bestuurder die instapt, kan op elk moment de deur openen of wegrijden. Uitwijken en afstand nemen geeft je ruimte om te reageren."
+  },
+  {
+   "id": "gh-002",
+   "hoofdstuk": "gevarenherkenning",
+   "moeilijkheid": 2,
+   "vraag": "Het regent hard en je rijdt 80 km/u op de snelweg. Wat is het grootste risico?",
+   "opties": [
+    "AQUAPLANING — je banden raken grip kwijt",
+    "Je motor oververhit raakt",
+    "Je ruitenwissers slijten",
+    "Je verbruik stijgt"
+   ],
+   "juist": 0,
+   "uitleg": "Bij veel regen kan er een waterfilm tussen band en weg ontstaan: aquaplaning. Je stuurt dan niet meer. Snelheid verminderen is de oplossing."
+  },
+  {
+   "id": "gh-003",
+   "hoofdstuk": "gevarenherkenning",
+   "moeilijkheid": 1,
+   "vraag": "Een kind loopt met een bal langs de straat. Wat verwacht je?",
+   "opties": [
+    "Niets bijzonders",
+    "Dat het kind de bal achterna de straat op kan rennen",
+    "Dat het kind terug naar huis loopt",
+    "Dat er een volwassene komt"
+   ],
+   "juist": 1,
+   "uitleg": "Kinderen zijn onvoorspelbaar. Een bal die de straat op rolt is een klassiek gevaarscenario: het kind rent erachteraan zonder te kijken."
+  },
+  {
+   "id": "gh-004",
+   "hoofdstuk": "gevarenherkenning",
+   "moeilijkheid": 2,
+   "vraag": "Je nader een kruispunt met 'stop' je moet volledig stoppen. Waarom is dat belangrijk zelfs als je niets ziet?",
+   "opties": [
+    "Omdat stoppen bij een bord altijd verplicht is",
+    "Omdat je motor anders afslaat",
+    "Omdat je anders te snel bent",
+    "Omdat het舒适er rijdt"
+   ],
+   "juist": 0,
+   "uitleg": "Een stopbord verplicht tot volledige stop, ongeacht of je verkeer ziet. Kijkend oversteken zonder te stoppen is een fout die gezakt wordt."
+  },
+  {
+   "id": "gh-005",
+   "hoofdstuk": "gevarenherkenning",
+   "moeilijkheid": 3,
+   "vraag": "Je rijdt achter een vrachtwagen die langzaam gaat. Je wilt inhalen. Wat zie je mogelijk niet?",
+   "opties": [
+    "De remlichten van de vrachtwagen",
+    "Tegenliggers achter de vrachtwagen",
+    "De snelheidslimiet",
+    "Je eigen blindhoek"
+   ],
+   "juist": 1,
+   "uitleg": "De vrachtwagen blokkeert je zicht op tegenliggers. Inhalen zonder volledig zicht op de tegenrijbaan is levensgevaarlijk."
+  },
+  {
+   "id": "kn-001",
+   "hoofdstuk": "kennis",
+   "moeilijkheid": 1,
+   "vraag": "Wat betekent een geel kentekenbewijs?",
+   "opties": [
+    "Het voertuig is oud",
+    "Het is een personenauto",
+    "Het voertuig is verzekerd",
+    "Het is een brommer/snorfiets"
+   ],
+   "juist": 1,
+   "uitleg": "Geel kentekenbewijs = personenauto. Groen = brommer/snorfiets. Dit is basiskennis die op het examen gevraagd kan worden."
+  },
+  {
+   "id": "kn-002",
+   "hoofdstuk": "kennis",
+   "moeilijkheid": 1,
+   "vraag": "Wat is de maximale toegestane alcohol-concentratie voor beginnende bestuurders (5 jaar of minder rijbewijs)?",
+   "opties": [
+    "0,5 promille",
+    "0,2 promille",
+    "0,0 promille",
+    "0,8 promille"
+   ],
+   "juist": 1,
+   "uitleg": "Beginnende bestuurders (rijbewijs < 5 jaar) mogen maximaal 0,2 promille hebben — strenger dan de normale 0,5."
+  },
+  {
+   "id": "kn-003",
+   "hoofdstuk": "kennis",
+   "moeilijkheid": 2,
+   "vraag": "Binnen de bebouwde kom is de maximumsnelheid voor personenauto's...",
+   "opties": [
+    "30 km/u",
+    "50 km/u",
+    "60 km/u",
+    "80 km/u"
+   ],
+   "juist": 1,
+   "uitleg": "Standaard binnen de bebouwde kom: 50 km/u, tenzij anders aangegeven. Let op: steeds meer 30 km/zones!"
+  },
+  {
+   "id": "kn-004",
+   "hoofdstuk": "kennis",
+   "moeilijkheid": 2,
+   "vraag": "Wanneer moet je je kenteken bewijzen kunnen tonen?",
+   "opties": [
+    "Alleen bij controle",
+    "Altijd in het voertuig aanwezig zijn",
+    "Alleen bij verkoop",
+    "Nooit, digitaal genoeg"
+   ],
+   "juist": 1,
+   "uitleg": "Het kentekenbewijs (of het digitale alternatief) moet altijd in het voertuig aanwezig zijn tijdens het rijden."
+  },
+  {
+   "id": "kn-005",
+   "hoofdstuk": "kennis",
+   "moeilijkheid": 1,
+   "vraag": "Wat betekent een stilstaande schoolbus met geventileerde lichten?",
+   "opties": [
+    "Niets bijzonders",
+    "Kinderen kunnen oversteken — extra oppassen",
+    "De bestuurder pauzeert",
+    "De bus heeft pech"
+   ],
+   "juist": 1,
+   "uitleg": "In Nederland (anders dan VS) is schoolbus-specifieke regel beperkt, maar het principe: kinderen rond voertuigen = extra voorzichtigheid."
+  },
+  {
+   "id": "in-001",
+   "hoofdstuk": "inzicht",
+   "moeilijkheid": 2,
+   "vraag": "Je wilt rechtsafslag op een kruispunt. Er loopt een fietser rechts naast je. Wat doe je?",
+   "opties": [
+    "Gewoon afslaan, jij hebt voorrang",
+    "Even naast de fietser blijven rijden tot hij voorbij is",
+    "Extra rechts-kijk en de fietser voorlaten",
+    "Hard remmen"
+   ],
+   "juist": 2,
+   "uitleg": "Bij rechtsafslaan is de fietser naast je je grootste risico ('de dode hoek rechts'). Laat hem doorgaan en kijk extra goed over je rechterschouder."
+  },
+  {
+   "id": "in-002",
+   "hoofdstuk": "inzicht",
+   "moeilijkheid": 1,
+   "vraag": "Op een smalle brug met tegenliggers: wie heeft voorrang?",
+   "opties": [
+    "Degene die het dichtstbij is",
+    "Degene die kan wachten op een uitwijkplek",
+    "Grote voertuigen altijd",
+    "Rechts heeft voorrang"
+   ],
+   "juist": 1,
+   "uitleg": "Bij obstakels op je eigen helft moet jij uitwijken/wachten. Degene die gemakkelijk kan wachten geeft voorrang aan degene die het moeilijker heeft."
+  },
+  {
+   "id": "in-003",
+   "hoofdstuk": "inzicht",
+   "moeilijkheid": 2,
+   "vraag": "Je bent moe na een lange dag. Je moet nog 30 minuten rijden. Wat is het beste?",
+   "opties": [
+    "Doorrijden, zo snel mogelijk thuis zijn",
+    "Even stoppen, korte wandeling, dan verder",
+    "Sneller rijden om eerder thuis te zijn",
+    "Luid muziek aanzetten"
+   ],
+   "juist": 1,
+   "uitleg": "Vermoeidheid is een van de grootste oorzaken van ongelukken. Korte pauze met frisse lucht helpt echt; sneller rijden verhoogt het risico."
+  },
+  {
+   "id": "in-004",
+   "hoofdstuk": "inzicht",
+   "moeilijkheid": 3,
+   "vraag": "Op een gladde weg (ijzel) moet je plotseling stoppen. Wat doe je?",
+   "opties": [
+    "Hard op de rem",
+    "Pompend remmen (ABS doet dit al) en gas los",
+    "Handrem trekken",
+    "Schakelen naar achteruit"
+   ],
+   "juist": 1,
+   "uitleg": "Bij ABS: volledig remmen en ABS laat pompen. Zonder ABS: pompend remmen. Gas loslaat helpt de auto te stabiliseren."
+  },
+  {
+   "id": "in-005",
+   "hoofdstuk": "inzicht",
+   "moeilijkheid": 1,
+   "vraag": "Je ziet een ouder iemand moeilijk oversteken bij een zebrapad. Wat is het juiste?",
+   "opties": [
+    "Snel doorgaan vóór hij begint",
+    "Stoppen en hem laten oversteken, ook als hij nog niet begonnen is",
+    "Claxonneren zodat hij weet dat je er bent",
+    "Langs hem rijden"
+   ],
+   "juist": 1,
+   "uitleg": "Op een zebrapad hebben voetgangers voorrang. Extra geduld met ouderen is zowel verplicht als menselijk."
+  },
+  {
+   "id": "ge-017",
+   "hoofdstuk": "gevarenherkenning",
+   "moeilijkheid": 1,
+   "vraag": "Je rijdt door een woonwijk. Een kind speelt met een bal op het trottoir vlak langs de rijbaan. Wat is de beste handelswijze?",
+   "opties": [
+    "Doorrijden, want het kind is niet op de rijbaan",
+    "Je snelheid verminderen en rekening houden met het kind",
+    "Claxonneren zodat het kind weet dat jij eraan komt",
+    "Inhalen, zodat je zo snel mogelijk voorbij het kind bent"
+   ],
+   "juist": 1,
+   "uitleg": "Kinderen reageren onvoorspelbaar en kunnen achter hun bal aan de rijbaan op lopen. Door je snelheid aan te passen heb je meer tijd om te reageren."
+  },
+  {
+   "id": "ge-018",
+   "hoofdstuk": "gevarenherkenning",
+   "moeilijkheid": 2,
+   "vraag": "Op een weg buiten de bebouwde kom staat een bus voor een bushalte. Je wilt de bus netjes inhalen. Waar moet je vooral op letten?",
+   "opties": [
+    "Dat de bus plotseling naar links uitwijkt",
+    "Dat je voor het inhalen gaat toeteren",
+    "Dat voetgangers de bus aan de achterkant kunnen oversteken",
+    "Dat het verplicht is te stoppen zodra een bus stopt"
+   ],
+   "juist": 2,
+   "uitleg": "Passagiers die uitstappen lopen vaak voor de bus vandaan de weg over, buiten het zicht van de bestuurder die wilt inhalen. Verlaag daarom je snelheid en wees extra alert."
+  },
+  {
+   "id": "ge-019",
+   "hoofdstuk": "gevarenherkenning",
+   "moeilijkheid": 2,
+   "vraag": "Je wilt op een kruising rechtsaf slaan. Er ligt een vrijliggend fietspad en er komen fietsers van rechts op het fietspad. Wat is de beste handelswijze?",
+   "opties": [
+    "Gewoon doorrijden, want jij komt vanaf een voorrangsweg",
+    "Alleen doorrijden als je gaat toeteren",
+    "Fietsers voor laten gaan en pas daarna afslaan",
+    "Snel doorrijden, want de fietsers kunnen beter remmen"
+   ],
+   "juist": 2,
+   "uitleg": "Bij het afslaan moet je verkeer op een vrijliggend fietspad dat rechtdoor gaat voor laten gaan. Fietsers zijn kwetsbaar en het gevaar van een conflict is groot bij het afslaan."
+  },
+  {
+   "id": "ge-020",
+   "hoofdstuk": "gevarenherkenning",
+   "moeilijkheid": 3,
+   "vraag": "Je rijdt op een smalle weg met geparkeerde auto's aan weerszijden. Tegelijkertijd komt er een tegenligger aan. Wat is de beste handelswijze?",
+   "opties": [
+    "Doorgaan met normale snelheid, want jij hebt voorrang",
+    "Zo dicht mogelijk langs de geparkeerde auto's rijden",
+    "Op een geschikt punt wachten tot de tegenligger voorbij is",
+    "Claxonneren zodat de tegenligger stopt"
+   ],
+   "juist": 2,
+   "uitleg": "Op zo'n smal profiel kunnen jullie niet naast elkaar. Je moet ruim van tevoren een geschikte uitwijkplaats opzoeken en wachten om een gevaarlijke situatie te voorkomen."
+  },
+  {
+   "id": "ge-021",
+   "hoofdstuk": "gevarenherkenning",
+   "moeilijkheid": 3,
+   "vraag": "Je nadert een kruising waar je voorrang hebt. Een auto van rechts nadert met hoge snelheid en lijkt niet te remmen. Wat is de beste handelswijze?",
+   "opties": [
+    "Gewoon doorrijden, want jij hebt voorrang",
+    "Snel versnellen om de kruising te passeren",
+    "Toeteren en doorgaan",
+    "Remmen en de kruising niet op rijden"
+   ],
+   "juist": 3,
+   "uitleg": "Ook als je voorrang hebt, moet je een ongeval voorkomen als het gedrag van een ander verkeersdeelnemer dat vereist. Voorrang regelt wie mag doorrijden, maar veiligheid gaat altijd voor."
+  },
+  {
+   "id": "ge-022",
+   "hoofdstuk": "gevarenherkenning",
+   "moeilijkheid": 2,
+   "vraag": "Je rijdt door een woonwijk. Er spelen kinderen tussen de geparkeerde auto's aan jouw kant van de weg. Wat is het beste wat je kunt doen?",
+   "opties": [
+    "Versnellen, zodat je zo snel mogelijk voorbij de kinderen bent",
+    "Je snelheid verlagen en extra zijafstand houden tot de geparkeerde auto's",
+    "Claxonneren om de kinderen te waarschuwen en daarna doorrijden",
+    "Je snelheid pas verlagen wanneer je daadwerkelijk een kind op de weg ziet"
+   ],
+   "juist": 1,
+   "uitleg": "Kinderen kunnen onverwacht tussen geparkeerde auto's de weg op stappen. Door vooraf je snelheid te verlagen en ruimte te laten, heb je meer tijd om te reageren."
+  },
+  {
+   "id": "ge-023",
+   "hoofdstuk": "gevarenherkenning",
+   "moeilijkheid": 3,
+   "vraag": "Je wilt binnen de bebouwde kom een fietser inhalen die doorgaat. Wat is hierbij het belangrijkste?",
+   "opties": [
+    "Je mag de fietser alleen inhalen als er een aparte fietsstrook is",
+    "Binnen de bebouwde kom mag je doorgaande fietsers niet inhalen",
+    "Je moet bij het inhalen minimaal 1,5 meter zijafstand tot de fietser houden",
+    "Je moet de fietser eerst waarschuwen met de claxon voordat je inhaleert"
+   ],
+   "juist": 2,
+   "uitleg": "Bij het inhalen van een doorgaande fietser moet je minimaal 1,5 meter zijafstand aanhouden, zowel binnen als buiten de bebouwde kom."
+  },
+  {
+   "id": "ge-024",
+   "hoofdstuk": "gevarenherkenning",
+   "moeilijkheid": 2,
+   "vraag": "Je nadert een kruispunt waar een hoge haag en geparkeerde auto's je zicht naar links beperken. Wat is het beste wat je kunt doen?",
+   "opties": [
+    "Heel langzaam sluipend rijden tot je voldoende overzicht over het kruispunt hebt",
+    "In één keer doorrijden, want op dit kruispunt heb jij voorrang",
+    "Claxonneren en daarna in één keer doorrijden",
+    "Flitsen met grootlicht om naderend verkeer te waarschuwen"
+   ],
+   "juist": 0,
+   "uitleg": "Bij beperkt zicht moet je zelf overzicht creëren door heel langzaam te sluipen. Voorrang hebben betekent niet dat je veilig kunt doorrijden zonder overzicht."
+  },
+  {
+   "id": "ge-025",
+   "hoofdstuk": "gevarenherkenning",
+   "moeilijkheid": 3,
+   "vraag": "Een bus ligt stil bij een bushalte aan jouw kant van de weg om passagiers in- en uit te laten stappen. Wat moet je vooral verwachten?",
+   "opties": [
+    "Dat de bus direct weer versnelt nadat de passagiers zijn uitgestapt",
+    "Dat passagiers op de stoep blijven staan tot het verkeer is gepasseerd",
+    "Dat naderend verkeer uit de tegenovergestelde richting gaat remmen",
+    "Dat passagiers onverwacht voor of achter de bus de rijbaan oversteken"
+   ],
+   "juist": 3,
+   "uitleg": "Passagiers die een bus verlaten, steken vaak direct voor of achter de bus de weg over. Pas daarom tijdig je snelheid aan en houd afstand."
+  },
+  {
+   "id": "ge-026",
+   "hoofdstuk": "gevarenherkenning",
+   "moeilijkheid": 1,
+   "vraag": "Het regent hard en het zicht op de weg is duidelijk verminderd. Wat betekent dit voor je rijgedrag?",
+   "opties": [
+    "Je mag de maximale snelheid blijven aanhouden zolang het daglicht is",
+    "Je moet je snelheid aanpassen aan het beperkte zicht en de gladde weg",
+    "Je hoeft alleen je volgafstand te vergroten en niet je snelheid aan te passen",
+    "Je moet direct op de vluchtstrook stoppen totdat de regen over is"
+   ],
+   "juist": 1,
+   "uitleg": "Bij hard regenweer is het zicht beperkt en de weg glad, waardoor je remweg langer wordt. Je moet je snelheid hier altijd op aanpassen."
+  },
+  {
+   "id": "ge-027",
+   "hoofdstuk": "gevarenherkenning",
+   "moeilijkheid": 2,
+   "vraag": "Je rijdt door een woonwijk. Een kind aan de linkerkant schopt een bal, die voor je de rijbaan op rolt. Wat is de beste reactie?",
+   "opties": [
+    "Je claxoneert en rijdt in hetzelfde tempo door",
+    "Je blijft doorrijden, een bal op de weg is geen gevaar",
+    "Je vertraagt direct, omdat het kind de bal achterna kan rennen",
+    "Je wijkt direct scherp uit naar de andere weghelft"
+   ],
+   "juist": 2,
+   "uitleg": "Kinderen reageren onvoorspelbaar en rennen vaak direct hun bal achterna de weg op. Verminder daarom direct je snelheid en bereid je voor om te stoppen."
+  },
+  {
+   "id": "ge-028",
+   "hoofdstuk": "gevarenherkenning",
+   "moeilijkheid": 3,
+   "vraag": "In de bebouwde kom nader je een stilstaande bus aan jouw kant van de weg, net voor een bushalte. Waarom moet je hier extra langzaam naderen?",
+   "opties": [
+    "Omdat de busbestuurder jou anders niet kan zien",
+    "Omdat voetgangers vóór de bus de weg kunnen oversteken, zonder dat jij hen ziet",
+    "Omdat je in de bebouwde kom verplicht moet stoppen achter een stilstaande bus",
+    "Omdat de bus extra veel wegruimte nodig heeft om weer weg te rijden"
+   ],
+   "juist": 1,
+   "uitleg": "De bus belemmert je zicht op voetgangers die uitstappen en vóór de bus de weg over willen steken. Nader daarom langzaam en houd je rem klaar."
+  },
+  {
+   "id": "ge-029",
+   "hoofdstuk": "gevarenherkenning",
+   "moeilijkheid": 3,
+   "vraag": "In een woonwijk staat een bestelwagen geparkeerd aan de linkerkant van de rijbaan. Je wilt hem inhalen. Welk gevaar moet je hier vooral verwachten?",
+   "opties": [
+    "Een fietser die langs de bestelwagen rijdt en plotseling voor je opduikt",
+    "Dat de bestelwagen harder optrekt dan een personenauto",
+    "Dat tegenliggers je geen voorrang geven bij het inhalen",
+    "Dat het wegdek bij de bestelwagen glad is"
+   ],
+   "juist": 0,
+   "uitleg": "Fietsers en motorrijders kunnen verborgen naast of achter geparkeerde voertuigen rijden en zijn daardoor plotseling zichtbaar. Houd daarom ruimte en vertraag tijdig."
+  },
+  {
+   "id": "ge-030",
+   "hoofdstuk": "gevarenherkenning",
+   "moeilijkheid": 1,
+   "vraag": "Je rijdt in dichte mist op een autoweg. Ver voor je zie je meerdere auto's hun remlichten laten branden. Wat is de juiste reactie?",
+   "opties": [
+    "Je schakelt terug naar een lagere versnelling en houdt je snelheid aan",
+    "Je zet je alarmlichten aan en rijdt door tot je het verkeer zelf ziet",
+    "Je wisselt direct van rijstrook om ruimte te houden",
+    "Je remt tijdig en gedoseerd, omdat de remlichten op langzaam rijdend of stilstaand verkeer kunnen wijzen"
+   ],
+   "juist": 3,
+   "uitleg": "Brandende remlichten ver voor je wijzen vaak op langzaam rijdend of stilstaand verkeer. Door beperkt zicht zie je het gevaar later, dus verminder je snelheid tijdig."
+  },
+  {
+   "id": "ge-031",
+   "hoofdstuk": "gevarenherkenning",
+   "moeilijkheid": 3,
+   "vraag": "Het heeft net geregend. Je nadert een scherpe bocht op een landweg waar veel natte bladeren op het wegdek liggen. Wat is hier het grootste gevaar?",
+   "opties": [
+    "Gripverlies, omdat het wegdek door de natte bladeren glad is",
+    "Dat de bladeren je zicht op de bocht belemmeren",
+    "Bandenpech door scherpe takken tussen de bladeren",
+    "Dat tegenliggers de bocht te breed nemen"
+   ],
+   "juist": 0,
+   "uitleg": "Nat blad maakt het wegdek zeer glad, waardoor je banden grip verliezen vooral in bochten. Verminder daarom je snelheid vóórdat je de bocht ingaat."
+  },
+  {
+   "id": "ge-032",
+   "hoofdstuk": "gevarenherkenning",
+   "moeilijkheid": 1,
+   "vraag": "Je rijdt door een woonwijk. Plotseling rolt een voetbal vanaf het trottoir de rijbaan op, net voor je auto. Wat moet je vooral verwachten?",
+   "opties": [
+    "Dat tegenliggers remmen en daarvoor naar jouw rijstrook uitwijken",
+    "Dat een volwassene de bal rustig van het trottoir terugrolt",
+    "Dat spelende kinderen zonder om te kijken de rijbaan op rennen om de bal te halen",
+    "Dat de bal vanzelf terugrolt naar het trottoir"
+   ],
+   "juist": 2,
+   "uitleg": "Een rollende bal is een klassiek waarschuwingsteken: kinderen jagen er blind achteraan en letten daarbij niet op verkeer. Rem direct af en wees remklaar."
+  },
+  {
+   "id": "ge-033",
+   "hoofdstuk": "gevarenherkenning",
+   "moeilijkheid": 2,
+   "vraag": "Vlak voor je stelt een stadsbus zich in bij een bushalte aan de rechterkant van de weg. Wat is hier het grootste gevaar?",
+   "opties": [
+    "Dat voetgangers die uit de bus stappen vóór de bus de rijbaan oversteken",
+    "Dat de bus met pech komt te staan en blijft wachten",
+    "Dat fietsers links van jou de bus proberen in te halen",
+    "Dat de bus zijn richtingaanwijzer niet gebruikt"
+   ],
+   "juist": 0,
+   "uitleg": "Voetgangers die een bus verlaten, steken vaak vlak vóór de bus over omdat ze het verkeer achter de bus niet kunnen overzien. Houd afstand en wees remklaar."
+  },
+  {
+   "id": "ge-034",
+   "hoofdstuk": "gevarenherkenning",
+   "moeilijkheid": 3,
+   "vraag": "Je rijdt achter een vrachtwagen die met de richtingaanwijzer aan rechtsaf wil slaan op een kruispunt met een fietspad. Naast de vrachtwagen rijdt een fietser rechtdoor. Wat maakt deze situatie zo gevaarlijk?",
+   "opties": [
+    "Dat de fietser harder rijdt dan de vrachtwagen",
+    "Dat de fietser in de dode hoek van de vrachtwagen kan zitten en wordt afgesneden als de vrachtwagen rechtsaf slaat",
+    "Dat de vrachtwagen te ver naar links uitwijkt om de bocht te maken",
+    "Dat het fietspad hier opeens eindigt"
+   ],
+   "juist": 1,
+   "uitleg": "Vrachtwagens hebben een grote dode hoek rechts; fietsers naast of vóór hen zijn vaak niet zichtbaar voor de bestuurder. Anticipeer op een fietser die plotseling moet remmen of uitwijken."
+  },
+  {
+   "id": "ge-035",
+   "hoofdstuk": "gevarenherkenning",
+   "moeilijkheid": 3,
+   "vraag": "Het is vroeg in de ochtend in de herfst. Je rijdt over een bochtige weg door een bosrijk gebied. Waar moet je hier vooral alert op zijn?",
+   "opties": [
+    "Dat de weg hier plotseling smaller wordt",
+    "Dat tegenliggers zonder dimlicht rijden",
+    "Dat dieren hier overdag nooit de weg oversteken",
+    "Gladheid door gevallen bladeren en ochtendvocht, vooral in bochten"
+   ],
+   "juist": 3,
+   "uitleg": "Natte bladeren en ochtenddauw maken het wegdek in de herfst extra glad, vooral in bochten en onder bomen. Verlaag je snelheid vóór de bocht, niet pas erin."
+  },
+  {
+   "id": "ge-036",
+   "hoofdstuk": "gevarenherkenning",
+   "moeilijkheid": 2,
+   "vraag": "Je rijdt langs een rij geparkeerde auto's. Eén auto is net gestopt: de remlichten branden nog en er zit een bestuurder in. Waar moet je hier rekening mee houden?",
+   "opties": [
+    "Dat de politie hier een verkeerscontrole houdt",
+    "Dat het remlicht defect is",
+    "Dat het portier plotseling opengaat of dat de auto direct weer wegrijdt",
+    "Dat de auto achteruitrijdend weer de rijstrook op komt"
+   ],
+   "juist": 2,
+   "uitleg": "Een auto waarvan de remlichten branden en waarin nog een bestuurder zit, kan zomaar een deur openen of wegrijden. Houd extra zijafstand en wees remklaar."
+  },
+  {
+   "id": "ge-037",
+   "hoofdstuk": "gevarenherkenning",
+   "moeilijkheid": 2,
+   "vraag": "Je rijdt door een woonwijk. Voor je staat een ijscoauto geparkeerd met verschillende kinderen eromheen. Wat is het verstandigste om te doen?",
+   "opties": [
+    "Versnel licht om zo snel mogelijk voorbij de ijscoauto te zijn",
+    "Claxoneer zodat de kinderen weten dat jij eraan komt",
+    "Rem af en blijf remklaar staan, omdat kinderen onverwacht de rijbaan kunnen oplopen",
+    "Rijd met dezelfde snelheid door, want de kinderen spelen op de stoep en niet op de weg"
+   ],
+   "juist": 2,
+   "uitleg": "Bij spelende kinderen moet je altijd anticiperen op plotseling en onvoorspelbaar gedrag, bijvoorbeeld als een kind achter een bal aan rent. Door af te remmen en remklaar te staan heb je meer tijd om te reageren."
+  },
+  {
+   "id": "ge-038",
+   "hoofdstuk": "gevarenherkenning",
+   "moeilijkheid": 3,
+   "vraag": "Je nadert een kruispunt. De vrachtwagen voor je remt af en rechts naast de vrachtwagen rijdt een fietser rechtdoor. Je wilt de vrachtwagen links inhalen. Wat is het verstandigste?",
+   "opties": [
+    "Snel inhalen vóór het kruispunt, zodat de vrachtwagen je niet meer in de weg zit",
+    "Niet inhalen en achter de vrachtwagen blijven rijden, omdat deze kan afslaan en de chauffeur de fietser in zijn dode hoek kan missen",
+    "Claxoneren zodat de fietser weet dat jij gaat inhalen",
+    "Naast de vrachtwagen blijven rijden tot je zeker weet dat hij rechtdoor gaat"
+   ],
+   "juist": 1,
+   "uitleg": "Vlak voor een kruispunt inhalen is gevaarlijk: de vrachtwagen kan rechtsaf slaan en de chauffeur kan de fietser in zijn dode hoek niet zien. De fietser kan dan in de knel komen tussen de vrachtwagen en de stoep."
+  },
+  {
+   "id": "ge-039",
+   "hoofdstuk": "gevarenherkenning",
+   "moeilijkheid": 2,
+   "vraag": "Een bus remt af voor een bushalte op een smalle weg binnen de bebouwde kom. Je wilt de bus passeren. Waar moet je vooral rekening mee houden?",
+   "opties": [
+    "Dat voetgangers die zijn uitgestapt vóór de bus de rijbaan kunnen oversteken",
+    "Dat de bus zonder te signaleren kan wegrijden",
+    "Dat er op deze plek een passeerverbod geldt",
+    "Dat de bus bij het wegrijden harder optrekt dan gewone auto's"
+   ],
+   "juist": 0,
+   "uitleg": "Voetgangers die van de bus zijn gestapt willen vaak direct de weg oversteken en zijn door de bus niet zichtbaar voor het achteropkomende verkeer. Rem af en geef deze voetgangers de ruimte."
+  },
+  {
+   "id": "ge-040",
+   "hoofdstuk": "gevarenherkenning",
+   "moeilijkheid": 3,
+   "vraag": "Je trekt een lege aanhanger achter je aan en rijdt over een hoge brug in open polderlandschap. Er staat een harde dwarswind. Wat is het grootste gevaar?",
+   "opties": [
+    "Je remmen kunnen door de wind minder goed werken",
+    "Er kan stof opwaaien waardoor je slechter ziet",
+    "Je bandenspanning kan door de wrijving te hoog oplopen",
+    "De dwarswind kan de aanhanger laten slingeren waardoor je de controle over je voertuig verliest"
+   ],
+   "juist": 3,
+   "uitleg": "Zijwind kan vooral een lege of hoogbeladen aanhanger in één keer flink opzij duwen en laten slingeren. Houd het stuur met beide handen vast en pas je snelheid aan, zeker op open plekken zoals bruggen en dijken."
+  },
+  {
+   "id": "ge-041",
+   "hoofdstuk": "gevarenherkenning",
+   "moeilijkheid": 1,
+   "vraag": "Het heeft net geregend. Je wilt bij een kruispunt met tramrails scherp linksaf slaan. Wat is hierbij het gevaar?",
+   "opties": [
+    "De rails kunnen je banden beschadigen bij het oversteken",
+    "Trams hebben op het kruispunt altijd voorrang waardoor je plotsgenoodzaakt bent te stoppen",
+    "Je wielen kunnen over de natte, gladde rails glijden waardoor je de grip verliest",
+    "Er kan veel water opspatten waardoor je het zicht op de weg verliest"
+   ],
+   "juist": 2,
+   "uitleg": "Tramrails zijn vooral bij natte gladheid zeer glad. Als je ze onder een scherpe hoek passeert, kunnen je wielen weg glijden en verlies je de grip op het stuur."
+  },
+  {
+   "id": "ge-042",
+   "hoofdstuk": "gevarenherkenning",
+   "moeilijkheid": 2,
+   "vraag": "U rijdt door een woonwijk langs geparkeerde auto's. Plotseling rolt een bal van tussen de geparkeerde auto's de rijbaan op. Wat is het grootste gevaar?",
+   "opties": [
+    "Dat een kind de bal achterna rent en u snel moet kunnen stoppen",
+    "Dat de bal onder uw auto komt en uw besturing blokkeert",
+    "Dat achteropkomend verkeer hard remt en u van achteren wordt aangereden",
+    "Dat de bal tegen uw voorruit komt en u daarvan schrikt"
+   ],
+   "juist": 0,
+   "uitleg": "Waar een bal is, is vaak een kind dat hem achterna rent, zonder op te letten. Verlaag daarom uw snelheid en wees voorbereid op een noodstop."
+  },
+  {
+   "id": "ge-043",
+   "hoofdstuk": "gevarenherkenning",
+   "moeilijkheid": 3,
+   "vraag": "U nadert een kruispunt binnen de bebouwde kom. Op de rechterhoek staat een grote bestelwagen geparkeerd. U wilt rechtsaf slaan. Wat is het grootste gevaar?",
+   "opties": [
+    "Dat een fietser die van rechts rechtdoor gaat door de bestelwagen voor u wordt afgedekt",
+    "Dat u met uw rechtervoorbumper de geparkeerde bestelwagen raakt",
+    "Dat tegenliggers u niet hebben zien aankomen omdat u te laat richtingaanwijzer geeft",
+    "Dat de geparkeerde bestelwagen plotseling wegrijdt terwijl u draait"
+   ],
+   "juist": 0,
+   "uitleg": "De bestelwagen dekt fietsers en voetgangers op het kruispunt volledig af. Rijd daarom eerst langzaam voorbij zodat u het kruispunt kunt overzien voordat u afslaat."
+  },
+  {
+   "id": "ge-044",
+   "hoofdstuk": "gevarenherkenning",
+   "moeilijkheid": 2,
+   "vraag": "Voor u stopt een bus bij een bushalte aan uw kant van de weg. Wat is het grootste gevaar?",
+   "opties": [
+    "Dat voetgangers voor of achter de bus de weg oversteken terwijl ze voor u worden afgedekt",
+    "Dat de bus achteruit rijdend de halte verlaat",
+    "Dat de busbestuurder zijn richtingaanwijzer niet gebruikt",
+    "Dat er een file ontstaat en u moet inhalen terwijl dit niet mag"
+   ],
+   "juist": 0,
+   "uitleg": "Passagiers die uitstappen steken vaak voor of achter de bus over en zijn voor u onzichtbaar. Houd daarom afstand en pas uw snelheid aan tot de bus weer vertrekt."
+  },
+  {
+   "id": "ge-045",
+   "hoofdstuk": "gevarenherkenning",
+   "moeilijkheid": 3,
+   "vraag": "U rijdt buiten de bebouwde kom en wilt een fietser inhalen. Er is een tegenligger die al snel nadert. Waarom is deze situatie gevaarlijk?",
+   "opties": [
+    "Omdat u door de snel naderende tegenligger te weinig tijd heeft om het inhalen veilig af te ronden",
+    "Omdat de fietser door de windhinder van uw auto van zijn fiets kan vallen",
+    "Omdat u tijdens het inhalen harder rijdt dan is toegestaan",
+    "Omdat de tegenligger u op deze afstand nog niet kan zien"
+   ],
+   "juist": 0,
+   "uitleg": "Door de hoge snelheid van de tegenligger krimpt de beschikbare ruimte snel en kunt u het inhalen niet veilig afronden. Breek de inhaalactie dan af en wacht tot de tegenligger is gepasseerd."
+  },
+  {
+   "id": "ge-046",
+   "hoofdstuk": "gevarenherkenning",
+   "moeilijkheid": 1,
+   "vraag": "Het heeft enkele weken niet geregend en er is veel vuil op de weg opgekoekt. Het begint net te regenen. Waar moet u vooral rekening mee houden?",
+   "opties": [
+    "Dat de weg door het gemengde vuil en de eerste regen heel glad is",
+    "Dat uw remmen door het vocht slechter gaan werken",
+    "Dat aquaplaning op deze kleine hoeveelheid regen al optreedt",
+    "Dat uw zicht achteruit wordt door de lichtschakelaar"
+   ],
+   "juist": 0,
+   "uitleg": "Tijdens een droge periode hoopt vuil en olie zich op het wegdek op; bij de eerste regen ontstaat daarvan een gladde laag. Pas daarom direct uw snelheid en volgafstand aan."
+  },
+  {
+   "id": "ke-047",
+   "hoofdstuk": "kennis",
+   "moeilijkheid": 2,
+   "vraag": "Wat is de maximale breedte van een auto inclusief de lading?",
+   "opties": [
+    "2,55 meter",
+    "2,60 meter",
+    "2,75 meter",
+    "3,00 meter"
+   ],
+   "juist": 1,
+   "uitleg": "De auto zelf mag maximaal 2,55 meter breed zijn. De lading mag aan weerszijden niet verder dan 0,20 meter uitsteken, waardoor de totale breedte maximaal 2,60 meter is."
+  },
+  {
+   "id": "ke-048",
+   "hoofdstuk": "kennis",
+   "moeilijkheid": 2,
+   "vraag": "'s Nachts rijdt u met lading die ruim 1 meter achter uw auto uitsteekt. Wat moet aan de achterzijde van de lading worden gedragen?",
+   "opties": [
+    "Een oranje zwaailicht",
+    "Een rode lantaarn",
+    "Een wit licht",
+    "Een gevarendriehoek"
+   ],
+   "juist": 1,
+   "uitleg": "Lading die meer dan 1 meter achter het voertuig uitsteekt, moet 's nachts worden gemarkeerd met een rode lantaarn. Overdag gebruikt u hiervoor een bord met schuin wit-rode vlakken."
+  },
+  {
+   "id": "ke-049",
+   "hoofdstuk": "kennis",
+   "moeilijkheid": 1,
+   "vraag": "U heeft uw rijbewijs B nog geen 5 jaar. Wat is de maximale toegestane hoeveelheid alcohol in uw bloed als u gaat autorijden?",
+   "opties": [
+    "0,2 promille",
+    "0,5 promille",
+    "0,8 promille",
+    "1,0 promille"
+   ],
+   "juist": 0,
+   "uitleg": "Beginners vallen gedurende 5 jaar onder de strengere risicobestuurdersnorm van maximaal 0,2 promille. Voor ervaren bestuurders geldt 0,5 promille."
+  },
+  {
+   "id": "ke-050",
+   "hoofdstuk": "kennis",
+   "moeilijkheid": 2,
+   "vraag": "Buiten de bebouwde kom krijgt uw auto pech en parkeert u deze zo ver mogelijk rechts van de rijbaan. Op welke minimale afstand achter uw auto plaatst u de gevarendriehoek?",
+   "opties": [
+    "Direct achter de auto",
+    "Op minimaal 30 meter",
+    "Op minimaal 60 meter",
+    "Op minimaal 100 meter"
+   ],
+   "juist": 1,
+   "uitleg": "Buiten de bebouwde kom plaatst u de gevarendriehoek minstens 30 meter achter het voertuig, zodat medeweggebruikers tijdig gewaarschuwd worden. Binnen de bebouwde kom plaatst u hem zo dicht mogelijk bij de auto."
+  },
+  {
+   "id": "ke-051",
+   "hoofdstuk": "kennis",
+   "moeilijkheid": 3,
+   "vraag": "U veroorzaakt een aanrijding en uw WAM-verzekeraar betaalt de schade van het slachtoffer. Wanneer kan de verzekeraar dit betaalde bedrag vervolgens op u verhalen?",
+   "opties": [
+    "Nooit, de WAM-verzekering betaalt altijd alle schade",
+    "Alleen als de schade hoger is dan €1.000",
+    "Als u de schade met opzet of door grove schuld hebt veroorzaakt",
+    "Alleen als het slachtoffer geen eigen WAM-verzekering had"
+   ],
+   "juist": 2,
+   "uitleg": "De WAM-verzekering dekt de schade van het slachtoffer, maar bij opzet of grove schuld kan de verzekeraar het betaalde bedrag op u terugvorderen (regres)."
+  },
+  {
+   "id": "ke-052",
+   "hoofdstuk": "kennis",
+   "moeilijkheid": 2,
+   "vraag": "Je nadert binnen de bebouwde kom een kruispunt waar jij voorrang hebt (de bestuurders van de kruisende weg moeten voorrang verlenen). Tegelijk nadert er een tram van links. Wat moet je doen?",
+   "opties": [
+    "Gewoon doorrijden, want jij hebt op dit kruispunt voorrang",
+    "Zo mogelijk stoppen en de tram voor laten gaan, ook al heb jij voorrang",
+    "Alleen stoppen als de chauffeur van de tram remt",
+    "Claxonneren en doorgaan, want trams mogen kruispunten niet oprijden als er gevaar bestaat"
+   ],
+   "juist": 1,
+   "uitleg": "Binnen de bebouwde kom moet je aan trams die van links komen altijd voorrang verlenen, ook op kruispunten waar jij eigenlijk voorrang hebt. Dit staat in artikel 49 van het RVV."
+  },
+  {
+   "id": "ke-053",
+   "hoofdstuk": "kennis",
+   "moeilijkheid": 1,
+   "vraag": "Je trekt met je personenauto een caravan (aanhangwagen zwaarder dan 750 kg) over de autosnelweg. Wat is de maximumsnelheid voor dit voertuigencombinatie?",
+   "opties": [
+    "100 km/u",
+    "120 km/u",
+    "80 km/u",
+    "De maximumsnelheid van de weg, dus 100 km/u overdag"
+   ],
+   "juist": 2,
+   "uitleg": "Met een personenauto met een aanhangwagen zwaarder dan 750 kg geldt buiten de bebouwde kom overal een maximumsnelheid van 80 km/u, dus ook op de autoweg en autosnelweg."
+  },
+  {
+   "id": "ke-054",
+   "hoofdstuk": "kennis",
+   "moeilijkheid": 3,
+   "vraag": "Je nadert een kruispunt waar jij voorrang hebt. Op het kruispunt passeert een militaire colonne onder begeleiding van een gids. Wanneer mag jij verder rijden?",
+   "opties": [
+    "Zodra het eerste voertuig van de colonne is gepasseerd",
+    "Zodra er een opening valt waar jouw auto door past",
+    "Pas nadat het laatste voertuig van de colonne het kruispunt is gepasseerd",
+    "Zodra de gids je naar het kruispunt wijst"
+   ],
+   "juist": 2,
+   "uitleg": "Een militaire colonne heeft op elk moment voorrang: je moet wachten tot het laatste voertuig van de colonne het kruispunt is gepasseerd voordat je verder mag rijden."
+  },
+  {
+   "id": "ke-055",
+   "hoofdstuk": "kennis",
+   "moeilijkheid": 2,
+   "vraag": "Van achteren hoor je een sirene naderen en je ziet een voertuig met blauwe zwaailichten op jouw rijstrook aankomen. Wat moet je doen?",
+   "opties": [
+    "Versnellen en de autosnelweg afrijden om hem voor te laten",
+    "Het voertuig onverwijld doorgang verlenen, je zo mogelijk rechts opstellen en zo nodig stoppen",
+    "Remmen tot je stilstaat, waar je ook op de weg bent",
+    "Links uitwijken zodat het voertuig rechts kan passeren"
+   ],
+   "juist": 1,
+   "uitleg": "Voor een voorrangsvoertuig met blauw zwaailicht en sirene moet je onverwijld doorgang verlenen door je zo mogelijk rechts op te stellen en zo nodig te stoppen."
+  },
+  {
+   "id": "ke-056",
+   "hoofdstuk": "kennis",
+   "moeilijkheid": 3,
+   "vraag": "Je rijdt binnen de bebouwde kom langs een bushalte waar een bus stilstaat. De bus zet de richtingaanwijzer aan om weg te rijden. Wat is het juiste gedrag?",
+   "opties": [
+    "Je moet je snelheid matigen en zo nodig stoppen, zodat de bestuurder van de bus kan vertrekken",
+    "Je mag snel voorbijrijden, want een bus heeft alleen voorrang buiten de bebouwde kom",
+    "Je hoeft alleen te stoppen als er passagiers oversteken",
+    "Je moet claxonneren om de chauffeur te waarschuwen dat je passeert"
+   ],
+   "juist": 0,
+   "uitleg": "Binnen de bebouwde kom ben je verplicht je zo te gedragen dat de bestuurder van een bus die van een halte wil vertrekken dat kan doen: snelheid matigen en zo nodig stoppen."
+  },
+  {
+   "id": "ke-057",
+   "hoofdstuk": "kennis",
+   "moeilijkheid": 1,
+   "vraag": "Wat is de wettelijk toegestane minimale profieldiepte van de banden van uw personenauto?",
+   "opties": [
+    "0,8 mm",
+    "1,6 mm",
+    "2,5 mm",
+    "3,0 mm"
+   ],
+   "juist": 1,
+   "uitleg": "De banden van een personenauto moeten over het gehele loopvlak minimaal 1,6 mm profieldiepte hebben. Te weinig profiel vermindert de grip, vooral op een nat wegdek."
+  },
+  {
+   "id": "ke-058",
+   "hoofdstuk": "kennis",
+   "moeilijkheid": 2,
+   "vraag": "U rijdt tegen een geparkeerde auto aan. De bestuurder is niet aanwezig. Wat bent u verplicht te doen?",
+   "opties": [
+    "Niets doen, want er is geen bestuurder aanwezig die uw gegevens kan opvragen",
+    "Uw naam en adres en het kenteken van uw voertuig achterlaten in of aan de geraakte auto",
+    "Alleen uw verzekeringsmaatschappij binnen vier weken informeren",
+    "De aanrijding binnen 48 uur via een formulier aan de gemeente melden"
+   ],
+   "juist": 1,
+   "uitleg": "Bij een aanrijding moet u uw naam en adres geven, en ook die van de eigenaar of houder en het kenteken van uw voertuig. Is de benadeelde afwezig, dan laat u deze gegevens achter of meldt u het zo snel mogelijk bij de politie."
+  },
+  {
+   "id": "ke-059",
+   "hoofdstuk": "kennis",
+   "moeilijkheid": 2,
+   "vraag": "Met welke verzekering bent u verplicht om minimaal uw personenauto te verzekeren?",
+   "opties": [
+    "Allriskverzekering (volledig casco)",
+    "Beperkt cascoverzekering (WA-plus)",
+    "Wettelijke aansprakelijkheidsverzekering (WA)",
+    "Rechtsbijstandverzekering voor verkeerszaken"
+   ],
+   "juist": 2,
+   "uitleg": "Elk motorvoertuig moet minimaal een WA-verzekering hebben. Deze dekt de schade die u met uw voertuig aan anderen toebrengt; cascodekking is altijd vrijwillig."
+  },
+  {
+   "id": "ke-060",
+   "hoofdstuk": "kennis",
+   "moeilijkheid": 3,
+   "vraag": "U wilt met uw personenauto een lange ladder vervoeren. Mag de ladder achter de auto uitsteken en zo ja, tot hoever?",
+   "opties": [
+    "Nee, lading mag nooit buiten de contouren van de auto uitsteken",
+    "Ja, maximaal 0,5 meter en alleen als u binnen de bebouwde kom rijdt",
+    "Ja, maximaal 1 meter, mits de uitstekende lading gemarkeerd is met bijvoorbeeld een afgesloten wit bord",
+    "Ja, maximaal 2 meter, mits u overdag rijdt en niet sneller dan 30 km/u"
+   ],
+   "juist": 2,
+   "uitleg": "Lading mag aan de achterzijde maximaal 1 meter uitsteken en moet dan goed gemarkeerd zijn: overdag met een afgesloten wit bord of witte markering, in het donker met een rood licht."
+  },
+  {
+   "id": "ke-061",
+   "hoofdstuk": "kennis",
+   "moeilijkheid": 3,
+   "vraag": "U krijgt pech en komt op de vluchtstrook van een snelweg tot stilstand. Wat is de juiste manier om medeweggebruikers te waarschuwen?",
+   "opties": [
+    "De waarschuwingslichten alleen inschakelen als het donker is of het zicht slecht is",
+    "De waarschuwingslichten uitschakelen, omdat u veilig buiten de rijbaan staat",
+    "De waarschuwingslichten inschakelen zodra u tot stilstand bent gekomen en houden totdat het gevaar geweken is",
+    "Een gevaarsignaal geven met de claxon zodra er verkeer nadert"
+   ],
+   "juist": 2,
+   "uitleg": "Bij stilstand wegens pech gebruikt u de waarschuwingslichten om andere weggebruikers tijdig op het stilstaande voertuig te attenderen, juist ook op de vluchtstrook."
+  },
+  {
+   "id": "ke-062",
+   "hoofdstuk": "kennis",
+   "moeilijkheid": 2,
+   "vraag": "Je hebt je autorijbewijs B iets meer dan 3 jaar geleden gehaald. Wat is voor jou de maximale toegestane hoeveelheid alcohol in je bloed?",
+   "opties": [
+    "0,5 promille",
+    "0,2 promille",
+    "0,8 promille",
+    "0,0 promille"
+   ],
+   "juist": 1,
+   "uitleg": "Beginnende bestuurders (minder dan 7 jaar in het bezit van het rijbewijs) mogen maximaal 0,2 promille alcohol in hun bloed hebben. Ervaren bestuurders mogen maximaal 0,5 promille hebben."
+  },
+  {
+   "id": "ke-063",
+   "hoofdstuk": "kennis",
+   "moeilijkheid": 2,
+   "vraag": "Wat is de maximale toegestane breedte van een personenauto, inclusief lading?",
+   "opties": [
+    "2,00 meter",
+    "2,55 meter",
+    "2,75 meter",
+    "3,00 meter"
+   ],
+   "juist": 1,
+   "uitleg": "Een voertuig mag inclusief lading niet breder zijn dan 2,55 meter. Overige maten zijn maximaal 12 meter lang en 4 meter hoog."
+  },
+  {
+   "id": "ke-064",
+   "hoofdstuk": "kennis",
+   "moeilijkheid": 3,
+   "vraag": "Je rijdt buiten de bebouwde kom bij goed zicht achter een auto aan. Wat is de minimale volgafstand?",
+   "opties": [
+    "1 seconde",
+    "2 seconden",
+    "3 seconden",
+    "4 seconden"
+   ],
+   "juist": 1,
+   "uitleg": "Buiten de bebouwde kom moet je minimaal 2 seconden achterop houden; binnen de bebouwde kom is 1 seconde het minimum. Bij slecht weer of zicht moet je de afstand vergroten."
+  },
+  {
+   "id": "ke-065",
+   "hoofdstuk": "kennis",
+   "moeilijkheid": 3,
+   "vraag": "Boven de rijstrook waarop jij rijdt, toont een DRIP een rood kruis. Wat moet je doen?",
+   "opties": [
+    "Doorgaan, het kruis geldt alleen voor de rijstrook links van mij",
+    "Deze rijstrook verlaten en doorgaan op een rijstrook waar geen rood kruis staat",
+    "Stoppen op de vluchtstrook en wachten tot het kruis verdwijnt",
+    "De maximumsnelheid halveren en blijven doorrijden over deze rijstrook"
+   ],
+   "juist": 1,
+   "uitleg": "Een rood kruis op een DRIP betekent dat de rijstrook gesloten is. Je moet deze rijstrook zo snel mogelijk verlaten en verder rijden op een rijstrook waar dat is toegestaan."
+  },
+  {
+   "id": "ke-066",
+   "hoofdstuk": "kennis",
+   "moeilijkheid": 1,
+   "vraag": "U rijdt binnen de bebouwde kom op een weg waar geen borden of markeringen de snelheid beperken. Wat is de maximale snelheid waarmee u hier mag rijden?",
+   "opties": [
+    "30 km/u",
+    "50 km/u",
+    "60 km/u",
+    "80 km/u"
+   ],
+   "juist": 1,
+   "uitleg": "Binnen de bebouwde kom geldt een maximale snelheid van 50 km/u, tenzij borden of markeringen iets anders aangeven."
+  },
+  {
+   "id": "ke-067",
+   "hoofdstuk": "kennis",
+   "moeilijkheid": 2,
+   "vraag": "U heeft uw rijbewijs B minder dan 5 jaar. Wat is het maximale toegestane alcoholgehalte in uw bloed als u gaat autorijden?",
+   "opties": [
+    "0,2 promille",
+    "0,5 promille",
+    "0,8 promille",
+    "1,0 promille"
+   ],
+   "juist": 0,
+   "uitleg": "Voor beginnende bestuurders (rijbewijs minder dan 5 jaar oud) geldt een limiet van 0,2 promille. Voor ervaren bestuurders is dit 0,5 promille."
+  },
+  {
+   "id": "ke-068",
+   "hoofdstuk": "kennis",
+   "moeilijkheid": 2,
+   "vraag": "U verdubbelt uw snelheid van 30 km/u naar 60 km/u. Wat gebeurt er met uw remweg (niet de stopweg)?",
+   "opties": [
+    "De remweg blijft even lang",
+    "De remweg wordt twee keer zo lang",
+    "De remweg wordt vier keer zo lang",
+    "De remweg wordt de helft korter"
+   ],
+   "juist": 2,
+   "uitleg": "De remweg neemt kwadratisch toe met de snelheid: bij dubbele snelheid wordt de remweg vier keer zo lang. Dit komt omdat er bij hogere snelheid veel meer bewegingsenergie moet worden weggenomen."
+  },
+  {
+   "id": "ke-069",
+   "hoofdstuk": "kennis",
+   "moeilijkheid": 3,
+   "vraag": "Op de weg ziet u een dubbele doorgetrokken streep. Wat is hier toegestaan?",
+   "opties": [
+    "De streep oversteken om rechtsaf te slaan naar een erf",
+    "De streep oversteken om in te halen als er geen verkeer aankomt",
+    "De streep nooit oversteken",
+    "De streep alleen oversteken buiten de spits"
+   ],
+   "juist": 2,
+   "uitleg": "Een dubbele doorgetrokken streep mag nooit worden overgestoken, ook niet om te keren, in te halen of een erf in te rijden."
+  },
+  {
+   "id": "ke-070",
+   "hoofdstuk": "kennis",
+   "moeilijkheid": 3,
+   "vraag": "Buiten de bebouwde kom past u de halve-snelheidsmeter toe om uw volgafstand te controleren. Welke minimale afstand moet u aanhouden bij een snelheid van 80 km/u?",
+   "opties": [
+    "20 meter",
+    "30 meter",
+    "40 meter",
+    "80 meter"
+   ],
+   "juist": 2,
+   "uitleg": "De halve-snelheidsmeter houdt in dat uw volgafstand in meters minimaal de helft is van uw snelheid in km/u. Bij 80 km/u is dat dus 40 meter."
+  },
+  {
+   "id": "ke-071",
+   "hoofdstuk": "kennis",
+   "moeilijkheid": 1,
+   "vraag": "Je rijdt met je personenauto binnen de bebouwde kom. Er staan geen borden die een andere maximumsnelheid aangeven. Hoe hard mag je hier maximaal rijden?",
+   "opties": [
+    "30 km per uur",
+    "50 km per uur",
+    "80 km per uur",
+    "100 km per uur"
+   ],
+   "juist": 1,
+   "uitleg": "Binnen de bebouwde kom geldt voor personenauto's een maximumsnelheid van 50 km per uur, tenzij borden iets anders aangeven."
+  },
+  {
+   "id": "ke-072",
+   "hoofdstuk": "kennis",
+   "moeilijkheid": 2,
+   "vraag": "Je rijdt buiten de bebouwde kom 80 km per uur. Welke volgafstand tot het voertuig voor je is minimaal verantwoord?",
+   "opties": [
+    "20 meter",
+    "30 meter",
+    "40 meter",
+    "80 meter"
+   ],
+   "juist": 2,
+   "uitleg": "Buiten de bebouwde kom is de richtlijn om de halve snelheid aan te houden in meters: bij 80 km per uur dus ten minste 40 meter volgafstand."
+  },
+  {
+   "id": "ke-073",
+   "hoofdstuk": "kennis",
+   "moeilijkheid": 2,
+   "vraag": "Wanneer is het gebruik van het mistachterlicht toegestaan?",
+   "opties": [
+    "Als het zicht door mist of sneeuwval minder dan 50 meter is",
+    "Als het zicht door mist minder dan 200 meter is",
+    "Bij hevige regenval op de snelweg",
+    "Als het donker is op een onverlichte weg"
+   ],
+   "juist": 0,
+   "uitleg": "Het mistachterlicht mag uitsluitend worden gebruikt bij mist of sneeuwval met een zicht van minder dan 50 meter, omdat het felle licht andere bestuurders kan verblinden."
+  },
+  {
+   "id": "ke-074",
+   "hoofdstuk": "kennis",
+   "moeilijkheid": 3,
+   "vraag": "Je wilt op een gelijkwaardige kruising linksaf slaan. Tegenover je nadert een auto die rechtdoor wil. Wat geldt?",
+   "opties": [
+    "Ik heb voorrang, omdat ik linksaf sla",
+    "Wie het eerst zijn richting aangeeft, gaat voor",
+    "De tegenligger heeft voorrang, omdat rechtdoor gaat boven afslaan",
+    "Het maakt niet uit, we mogen tegelijk oversteken"
+   ],
+   "juist": 2,
+   "uitleg": "Op een gelijkwaardige kruising gaat verkeer dat rechtdoor gaat, voor boven verkeer dat afslaat. Je moet de tegenligger dus eerst voor laten."
+  },
+  {
+   "id": "ke-075",
+   "hoofdstuk": "kennis",
+   "moeilijkheid": 3,
+   "vraag": "Mag je een bestuurder die voor je rijdt rechts inhalen?",
+   "opties": [
+    "Nee, rechts inhalen is nooit toegestaan",
+    "Ja, als de bestuurder voor me heeft aangegeven linksaf te slaan en ik veilig rechts langs kan",
+    "Ja, maar alleen op wegen buiten de bebouwde kom",
+    "Ja, als de bestuurder voor me langzamer rijdt dan de maximumsnelheid"
+   ],
+   "juist": 1,
+   "uitleg": "Rechts inhalen is toegestaan als de bestuurder voor je linksaf wil slaan en je veilig rechts langs kunt. Ook op wegen met rijstroken mag je rechts blijven rijden, zolang je op je eigen rijstrook blijft."
+  },
+  {
+   "id": "ke-076",
+   "hoofdstuk": "kennis",
+   "moeilijkheid": 3,
+   "vraag": "Je rijdt op een autosnelweg en trekt een aanhangwagen met een toegestane maximummassa van 1.300 kg. Wat is de maximumsnelheid voor jouw voertuigcombinatie?",
+   "opties": [
+    "80 km/u",
+    "90 km/u",
+    "100 km/u",
+    "120 km/u"
+   ],
+   "juist": 1,
+   "uitleg": "Een aanhanger met een toegestane maximummassa van meer dan 750 kg valt onder gevarenklasse II. Voor een personenauto met zo'n aanhanger geldt een maximumsnelheid van 90 km/u, ook op de autosnelweg."
+  },
+  {
+   "id": "in-077",
+   "hoofdstuk": "inzicht",
+   "moeilijkheid": 2,
+   "vraag": "Je rijdt over een weg met het bord 'voorrangsweg' (B1). Bij een kruispunt nadert van rechts een auto van een zijweg die rechtdoor wil. Jij wilt ook rechtdoor. Wat is juist?",
+   "opties": [
+    "Jij gaat eerst, omdat je op een voorrangsweg rijdt",
+    "De bestuurder van rechts gaat eerst, omdat hij van rechts komt",
+    "De bestuurder van rechts gaat eerst, omdat hij rechtdoor gaat",
+    "Jullie moeten allebei stoppen en elkaar laten gaan"
+   ],
+   "juist": 0,
+   "uitleg": "Rijd je op een voorrangsweg (bord B1), dan hoef je geen voorrang te verlenen aan verkeer dat van rechts vanaf een zijweg nadert. De regel 'van rechts gaat voor' geldt hier dus niet."
+  },
+  {
+   "id": "in-078",
+   "hoofdstuk": "inzicht",
+   "moeilijkheid": 2,
+   "vraag": "Je wilt bij een gelijkwaardig kruispunt linksaf slaan. Uit de tegenovergestelde richting nadert een bromfietser die rechtdoor wil. Wat is juist?",
+   "opties": [
+    "Jij gaat eerst, omdat een auto altijd voor een bromfietser gaat",
+    "De bromfietser gaat eerst, want jij moet als linksafslaander voorrang verlenen",
+    "Degene die het dichtst bij het kruispunt is, gaat eerst",
+    "Jullie moeten allebei volledig stoppen tot het kruispunt vrij is"
+   ],
+   "juist": 1,
+   "uitleg": "Wie linksaf slaat, moet voorrang verlenen aan tegenliggend verkeer dat op dezelfde weg rechtdoor gaat of rechtsaf slaat. Dat geldt ook voor (brom)fietsers."
+  },
+  {
+   "id": "in-079",
+   "hoofdstuk": "inzicht",
+   "moeilijkheid": 3,
+   "vraag": "Op jouw weghelft staat een geparkeerde vrachtwagen, waardoor je moet uitwijken naar de andere rijbaan. Vanuit de tegenovergestelde richting nadert een personenauto. Wat is juist?",
+   "opties": [
+    "Jij mag eerst om het obstakel rijden, omdat jij aan jouw kant van de weg rijdt",
+    "De tegenligger moet voorrang verlenen, omdat jij al achter de vrachtwagen rijdt",
+    "Jij moet voorrang verlenen aan de tegenligger, omdat het obstakel op jouw weghelft staat",
+    "Degene die het dichtst bij het obstakel is, gaat eerst"
+   ],
+   "juist": 2,
+   "uitleg": "Staat een obstakel op jouw weghelft, dan moet je voorrang verlenen aan tegenliggend verkeer. Alleen als het obstakel op de weghelft van de tegenligger staat, mag jij eerst."
+  },
+  {
+   "id": "in-080",
+   "hoofdstuk": "inzicht",
+   "moeilijkheid": 3,
+   "vraag": "Je nadert een gelijkwaardig kruispunt zonder verkeerstekens. Een tram nadert van rechts en wil rechtdoor rijden. Jij wilt rechtdoor. Wat is juist?",
+   "opties": [
+    "De tram gaat eerst, omdat je voorrang moet verlenen aan trams die van rechts naderen",
+    "Jij gaat eerst, omdat rechtdoor gaan voorrang heeft op andere richtingen",
+    "De tram gaat eerst, omdat een tram op elk kruispunt altijd voorrang heeft",
+    "Degene die als eerste remt, moet wachten tot de ander voorbij is"
+   ],
+   "juist": 0,
+   "uitleg": "Op gelijkwaardige kruispunten moet je voorrang verlenen aan trams die van rechts naderen, ook als er geen verkeerstekens staan. Trams hebben hierbij dus een bijzondere positie."
+  },
+  {
+   "id": "in-081",
+   "hoofdstuk": "inzicht",
+   "moeilijkheid": 1,
+   "vraag": "Je rijdt door een woonwijk langs geparkeerde auto's. Een kind loopt tussen de geparkeerde auto's en staart naar een bal op de stoep. Wat is de juiste handeling?",
+   "opties": [
+    "Ik rijd door met dezelfde snelheid, want het kind staat nog niet op de rijbaan",
+    "Ik geef een geluidssignaal en rijd met dezelfde snelheid door",
+    "Ik haal mijn voet van het gaspedaal en ben remklaar",
+    "Ik rem direct volledig stil, ook als er verkeer achter mij nadert"
+   ],
+   "juist": 2,
+   "uitleg": "Kan een gevaarlijke situatie ontstaan, dan moet je anticiperen: je snelheid verminderen en remklaar zijn. Zo kun je direct reageren als het kind de bal achtervolgt en de rijbaan op rent."
+  },
+  {
+   "id": "in-082",
+   "hoofdstuk": "inzicht",
+   "moeilijkheid": 2,
+   "vraag": "Je nadert een gelijkwaardige kruising buiten de bebouwde kom. Van rechts komt een bestelwagen aangereden, van links komt een fietser. Voor welk verkeer moet je voorrang verlenen?",
+   "opties": [
+    "Alleen voor de bestelwagen",
+    "Voor zowel de bestelwagen als de fietser",
+    "Alleen voor de fietser",
+    "Voor geen van beide"
+   ],
+   "juist": 0,
+   "uitleg": "Op een gelijkwaardige kruising verleen je alleen voorrang aan bestuurders die van rechts komen. De fietser komt van links en moet dus jou voorrang verlenen."
+  },
+  {
+   "id": "in-083",
+   "hoofdstuk": "inzicht",
+   "moeilijkheid": 2,
+   "vraag": "Je wilt op een kruispunt binnen de kom linksaf slaan en je hebt je richting aangegeven. De tegenligger gaat rechtdoor. Wat is het juiste gedrag?",
+   "opties": [
+    "Je gaat eerst, omdat je je richting al hebt aangegeven",
+    "Je geeft een kort geluidssignaal zodat de tegenligger stopt",
+    "Je wacht tot de tegenligger voorbij is en slaat dan af",
+    "Je mag tegelijk gaan omdat jullie beide binnen de bebouwde kom rijden"
+   ],
+   "juist": 2,
+   "uitleg": "Wie linksaf slaat, moet voorrang verlenen aan tegenliggers die op dezelfde weg rechtdoor gaan of rechtsaf slaan. Het aangeven van richting verandert daar niets aan."
+  },
+  {
+   "id": "in-084",
+   "hoofdstuk": "inzicht",
+   "moeilijkheid": 3,
+   "vraag": "Je rijdt op een rotonde en wilt de eerstvolgende uitgang rechts nemen. Naast je rijdt op de rotonde een fietser die rechtdoor wil. Wat is het juiste gedrag?",
+   "opties": [
+    "Je verlaat de rotonde, de fietser moet achter je blijven",
+    "Je blijft naast de fietser rijden tot voorbij de uitgang",
+    "Je geeft een kort geluidssignaal en verlaat daarna de rotonde",
+    "Je wacht tot de fietser voorbij is voordat je de rotonde verlaat"
+   ],
+   "juist": 3,
+   "uitleg": "Bij het afslaan moet je voorrang verlenen aan rechtdoor gaand verkeer, ook aan fietsers op de rotonde. Je mag de fietser niet afsnijden en wacht dus tot deze voorbij is."
+  },
+  {
+   "id": "in-085",
+   "hoofdstuk": "inzicht",
+   "moeilijkheid": 2,
+   "vraag": "Je wilt vanuit een uitrit de rijbaan oprijden. Op de rijbaan nadert een auto en op het trottoir loopt een voetganger. Voor wie moet je voorrang verlenen?",
+   "opties": [
+    "Alleen voor de auto",
+    "Alleen voor de voetganger",
+    "Voor zowel de auto als de voetganger",
+    "Voor geen van beide, zolang jij bijna stilstaat"
+   ],
+   "juist": 2,
+   "uitleg": "Wie de rijbaan wil verlaten of vanuit een uitrit de rijbaan wil oprijden, moet voorrang verlenen aan al het verkeer op de weg, dus ook aan voetgangers op het trottoir."
+  },
+  {
+   "id": "in-086",
+   "hoofdstuk": "inzicht",
+   "moeilijkheid": 1,
+   "vraag": "Voetgangers staan bij een zebrapad op het trottoir te wachten om over te steken. Wat is het juiste gedrag?",
+   "opties": [
+    "Je rijdt door, want ze staan nog niet op het zebrapad",
+    "Je verlaagt de snelheid en stopt om de voetgangers voor te laten gaan",
+    "Je geeft een kort geluidssignaal zodat ze weten dat jij komt",
+    "Je rijdt door maar remt af zodra ze een stap op de rijbaan zetten"
+   ],
+   "juist": 1,
+   "uitleg": "Bij een zebrapad moet je voorrang verlenen aan voetgangers die oversteken of op het punt staan over te steken. Anticiperend afremmen hoort daarbij."
+  },
+  {
+   "id": "in-087",
+   "hoofdstuk": "inzicht",
+   "moeilijkheid": 2,
+   "vraag": "U nadert een gelijkwaardig kruispunt: er zijn geen voorrangsborden, haaientanden of markering van een voorrangsweg. Op hetzelfde moment nadert vanuit de straat rechts van u een personenauto. Wat is de juiste handelswijze?",
+   "opties": [
+    "U rijdt door, want op een gelijkwaardig kruispunt heeft u voorrang",
+    "U verleent voorrang aan de bestuurder die van rechts komt",
+    "U stopt volledig stil en rijdt pas weg als het kruispunt leeg is",
+    "U toetert kort om de andere bestuurder te waarschuwen"
+   ],
+   "juist": 1,
+   "uitleg": "Op een gelijkwaardig kruispunt geldt de regel 'rechts heeft voorrang': u moet verkeer dat van rechts komt voor laten gaan. Volledig stilstand is niet verplicht, voorrang verlenen wel."
+  },
+  {
+   "id": "in-088",
+   "hoofdstuk": "inzicht",
+   "moeilijkheid": 2,
+   "vraag": "U wilt op een kruispunt linksaf slaan en zet op tijd uw richtingaanwijzer aan. Tegelijk nadert vanuit tegengestelde richting een vrachtwagen die rechtdoor wil rijden. Wat is juist?",
+   "opties": [
+    "U mag eerst afslaan, omdat u als eerste uw richtingaanwijzer aan heeft gezet",
+    "De bestuurder van de vrachtwagen moet u voor laten gaan, omdat hij u kruist",
+    "U moet het rechtdoorgaande tegenliggende verkeer voor laten gaan",
+    "Wie het eerst op het kruispunt staat, heeft voorrang"
+   ],
+   "juist": 2,
+   "uitleg": "Wie afslaat, moet voorrang verlenen aan rechtdoorgaand tegenliggend verkeer. Een richtingaanwijzer geeft nooit voorrang."
+  },
+  {
+   "id": "in-089",
+   "hoofdstuk": "inzicht",
+   "moeilijkheid": 3,
+   "vraag": "U wilt op een rondpunt binnen de bebouwde kom de tweede afslag nemen. Hoe gebruikt u de richtingaanwijzer?",
+   "opties": [
+    "Bij het insteken links aangeven en bij het verlaten rechts",
+    "Bij het insteken geen richting aangeven en rechts aangeven vlak voor de afslag",
+    "Bij het insteken rechts aangeven en bij het verlaten links",
+    "Zowel bij het insteken als bij het verlaten geen richting aangeven"
+   ],
+   "juist": 1,
+   "uitleg": "Op een rondpunt rijdt u rechtsom en geeft u bij het insteken geen richting aan. Pas als u de afslag nadert waar u het rondpunt verlaat, zet u de richtingaanwijzer rechts aan."
+  },
+  {
+   "id": "in-090",
+   "hoofdstuk": "inzicht",
+   "moeilijkheid": 3,
+   "vraag": "U rijdt binnen de bebouwde kom. De personenauto vóór u stopt vlak bij een voetgangersoversteekplaats, omdat een voetganger wil oversteken. Er is geen tegemoetkomend verkeer. Wat is de juiste handelswijze?",
+   "opties": [
+    "U mag met stapvoets langs de auto rijden, mits u de voetganger voorrang geeft",
+    "U toetert kort, zodat de voetganger weet dat u langskomt",
+    "U stopt achter de auto en wacht tot de voetganger veilig is overgestoken",
+    "U mag inhalen, want het inholverbod geldt alleen buiten de bebouwde kom"
+   ],
+   "juist": 2,
+   "uitleg": "Bij een voetgangersoversteekplaats is inhalen verboden zodra voetgangers oversteken of op het punt staan over te steken. Bovendien moet u zelf stoppen voor voetgangers die willen oversteken."
+  },
+  {
+   "id": "in-091",
+   "hoofdstuk": "inzicht",
+   "moeilijkheid": 1,
+   "vraag": "U rijdt met de auto een woonerf in (het bord met woonhuizen). Wat geldt in het woonerf?",
+   "opties": [
+    "Voetgangers mogen de hele breedte van de weg gebruiken en u mag maximaal 15 km/u rijden",
+    "Voetgangers moeten gebruikmaken van het trottoir en u mag maximaal 30 km/u rijden",
+    "U mag maximaal 15 km/u rijden en overal langs de weg parkeren",
+    "U heeft als automobilist voorrang op voetgangers die de rijbaan oversteken"
+   ],
+   "juist": 0,
+   "uitleg": "In een woonerf geldt een maximumsnelheid van 15 km/u en mogen voetgangers de volle breedte van de weg gebruiken. U moet dus extra rekening houden met voetgangers en spelende kinderen."
+  },
+  {
+   "id": "in-092",
+   "hoofdstuk": "inzicht",
+   "moeilijkheid": 1,
+   "vraag": "Je nadert een gelijkwaardige kruising: er zijn geen verkeerslichten, borden of markeringen die voorrang regelen. Tegelijk met jou nadert een auto de kruising vanuit jouw rechts. Wie heeft hier voorrang?",
+   "opties": [
+    "Jij, omdat jij rechtdoor over de kruising gaat",
+    "De andere bestuurder, omdat deze vanaf rechts nadert",
+    "Jij, omdat jij als eerste op de kruising stopt",
+    "De andere bestuurder, omdat deze sneller nadert dan jij"
+   ],
+   "juist": 1,
+   "uitleg": "Op een gelijkwaardige kruising geldt de voorrang-regel: je moet verkeer dat je van rechts nadert voor laten gaan. Rechtdoor gaan of eerder remmen geeft daar geen voorrang."
+  },
+  {
+   "id": "in-093",
+   "hoofdstuk": "inzicht",
+   "moeilijkheid": 2,
+   "vraag": "Op een gelijkwaardige kruising binnen de bebouwde kom wil jij linksaf slaan. De bestuurder die uit tegengestelde richting nadert, gaat rechtdoor over de kruising. Wie moet hier voorrang verlenen?",
+   "opties": [
+    "Jij, omdat jij als afslaander tegenliggers die rechtdoor doorgaan voor moet laten",
+    "De tegenligger, omdat jij met een bocht langzamer rijdt en makkelijker kunt stoppen",
+    "Niemand, omdat jullie paden op deze kruising elkaar niet kruisen",
+    "Degene die als eerste bij de kruising aankomt"
+   ],
+   "juist": 0,
+   "uitleg": "Wie afslaat, moet tegenliggers die op dezelfde weg voorbij de kruising rechtdoor doorgaan voor laten gaan. Het gaat om de rijrichting, niet om wie eerder aankomt of langzamer rijdt."
+  },
+  {
+   "id": "in-094",
+   "hoofdstuk": "inzicht",
+   "moeilijkheid": 2,
+   "vraag": "Je rijdt binnen de bebouwde kom achter een stadsbus aan die bij een halte staat. De busbestuurder zet de richtingaanwijzer aan en gaat van de halte wegrijden. Wat moet je doen?",
+   "opties": [
+    "Versnellen en de bus passeren voordat deze de rijbaan op komt",
+    "Claxoneren zodat de busbestuurder weet dat jij eraan komt",
+    "De bus voor laten gaan, omdat een bus die van een halte wil wegrijden binnen de bebouwde kom voorrang heeft",
+    "Gewoon doorrijden, want op de rijbaan heb je altijd voorrang op een wegrijdend voertuig"
+   ],
+   "juist": 2,
+   "uitleg": "Binnen de bebouwde kom moet je een bus die bij een halte aangeeft te willen wegrijden voor laten gaan. Buiten de bebouwde kom geldt die voorrang voor de bus juist niet."
+  },
+  {
+   "id": "in-095",
+   "hoofdstuk": "inzicht",
+   "moeilijkheid": 3,
+   "vraag": "Je komt van een parkeerterrein en wilt de rijbaan oprijden. Langs de rijbaan loopt een vrijliggend fietspad waarop fietsers naderen. Wat geldt hier?",
+   "opties": [
+    "De fietsers hebben voorrang, want bij het verlaten van een parkeerterrein moet je al het verkeer op de weg voor laten gaan",
+    "Jij hebt voorrang, omdat de fietsers op hun eigen vrijliggend fietspad rijden en jou niet kruisen",
+    "De fietsers hebben alleen voorrang als er haaientanden bij de uitrit zijn getekend",
+    "Jij hebt voorrang, omdat je al op de stoep staat en dus al op de weg bent"
+   ],
+   "juist": 0,
+   "uitleg": "Verkeer dat een parkeerterrein verlaat, moet al het verkeer op de doorgaande weg voor laten gaan, dus óók fietsers op het (vrijliggend) fietspad. Haaientanden hoeven daarvoor niet aanwezig te zijn."
+  },
+  {
+   "id": "in-096",
+   "hoofdstuk": "inzicht",
+   "moeilijkheid": 3,
+   "vraag": "Je rijdt met aangepaste snelheid door een woonwijk waar links geparkeerde auto's staan. Plotseling rolt een voetbal tussen de geparkeerde auto's vandaan de rijbaan op. Waarvoor moet je hier direct bedacht op zijn?",
+   "opties": [
+    "Dat de bal tegen je auto stuitert en schade veroorzaakt",
+    "Dat er een kind achter de bal aan rent dat tussen de geparkeerde auto's verborgen voor je verborg",
+    "Dat achteropkomend verkeer plotseling dicht achter je nadert",
+    "Dat een geparkeerde auto zonder aankondigen weg zal rijden"
+   ],
+   "juist": 1,
+   "uitleg": "Kinderen achtervolgen vaak onbezonnen een bal en zijn door de geparkeerde auto's niet waarneembaar. Een rollende bal is een klassiek teken dat je direct moet afremmen en moet rekenen op een kind dat de rijbaan op rent."
+  },
+  {
+   "id": "in-097",
+   "hoofdstuk": "inzicht",
+   "moeilijkheid": 2,
+   "vraag": "U nadert een kruispunt van twee gelijkwaardige wegen. Van rechts nadert een bromfietser die het kruispunt op wil. Wat is de juiste handelswijze?",
+   "opties": [
+    "U mag doorgaan, want een bromfietser hoeft u vanaf een klein voertuig nooit voorrang te geven",
+    "U moet de bromfietser voor laten gaan",
+    "U mag doorgaan als u op tijd toetert",
+    "U moet altijd volledig stoppen, ook als de bromfietser nog ver weg is"
+   ],
+   "juist": 1,
+   "uitleg": "Op een kruispunt van gelijkwaardige wegen geldt voorrang van rechts, en dat geldt ook voor bromfietsers. Zorg dat u tijdig snelheid verlaagt zodat u de bromfietser voor kunt laten."
+  },
+  {
+   "id": "in-098",
+   "hoofdstuk": "inzicht",
+   "moeilijkheid": 3,
+   "vraag": "U rijdt door een woonwijk waar aan weerszijden auto's geparkeerd staan. Tussen de geparkeerde auto's rolt plotseling een bal de rijbaan op. Wat is de juiste handelswijze?",
+   "opties": [
+    "U rijdt door met dezelfde snelheid, want een bal is geen verkeersdeelnemer",
+    "U haalt uw voet van het gaspedaal en rijdt remklaar, omdat u een kind kunt verwachten",
+    "U volremt direct en zet uw alarmlichten aan",
+    "U toetert en houdt uw snelheid vast"
+   ],
+   "juist": 1,
+   "uitleg": "Waar een bal de rijbaan oprolt, kan direct een kind achteraan komen. Goed inzicht betekent dat u dit verwacht door te decelereren en remklaar te rijden."
+  },
+  {
+   "id": "in-099",
+   "hoofdstuk": "inzicht",
+   "moeilijkheid": 2,
+   "vraag": "U wilt met uw auto rechtsaf slaan. Naast en iets achter u rijdt een fietser die rechtdoor gaat. Wat is de juiste handelswijze?",
+   "opties": [
+    "U slaat normaal af, want als automobilist heeft u bij het afslaan voorrang op de fietser",
+    "U toetert en sluit af; de fietser moet dan remmen",
+    "U zet uw richtingaanwijzer aan en sluit direct af",
+    "U blijft achter de fietser rijden tot deze voorbij is en sluit dan pas af"
+   ],
+   "juist": 3,
+   "uitleg": "Bij het afslaan mag u geen gevaar of hinder veroorzaken voor verkeer naast of achter u. Fietser in uw dode hoek? Dan wacht u tot deze voorbij is."
+  },
+  {
+   "id": "in-100",
+   "hoofdstuk": "inzicht",
+   "moeilijkheid": 1,
+   "vraag": "U rijdt binnen de bebouwde kom achter een personenauto aan. Welke volgafstand is minimaal veilig?",
+   "opties": [
+    "Ongeveer twee seconden achter elkaar rijden",
+    "Zo dicht mogelijk erachter, zodat u de remlichten goed kunt zien",
+    "Ongeveer een halve meter",
+    "Ten minste tien meter, ongeacht uw snelheid"
+   ],
+   "juist": 0,
+   "uitleg": "Houd minstens twee seconden afstand. Bij 50 km/u is dat circa 30 meter, genoeg ruimte om bij een noodstop veilig te kunnen stoppen."
+  },
+  {
+   "id": "in-101",
+   "hoofdstuk": "inzicht",
+   "moeilijkheid": 3,
+   "vraag": "U verlaat een parkeerterrein en wilt de rijbaan oprijden. Op de rijbaan nadert een auto en op het fietspad naast de weg komt een fietser aan. Wat is de juiste handelswijze?",
+   "opties": [
+    "U rijdt op zodra de auto voorbij is; de fietser wacht wel",
+    "U toetert, rijdt op en geeft de fietser daarna voorrang",
+    "U wacht tot zowel de auto als de fietser voorbij zijn en rijdt dan de rijbaan op",
+    "U heeft als verlatende partij voorrang op al het verkeer op de rijbaan"
+   ],
+   "juist": 2,
+   "uitleg": "Wie vanuit een uitrit de rijbaan op wil, moet al het verkeer op die weg voor laten gaan, dus zowel de auto op de rijbaan als de fietser op het fietspad."
+  }
+ ]
 }
