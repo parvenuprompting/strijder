@@ -9,7 +9,7 @@
 
 **Strijder** — CBR theorie-oefenapp van de Parvenu-fabriek. Train. Slaag. Strijd. ⚔️
 
-Gebouwd voor één leerling: de broer van Tiëndo. Offline bruikbaar (PWA), 100% lokaal, geen accounts, geen cloud, geen advertenties.
+Gebouwd voor één leerling: persoonlijke theorie-training. Offline bruikbaar (PWA), 100% lokaal, geen accounts, geen cloud, geen advertenties.
 
 ## Oefenmodi
 
@@ -41,4 +41,4 @@ Pure HTML/CSS/JS — geen build-stap, geen framework. PWA met service worker (of
 
 ## Basis
 
-Ontworpen door Genius (Parvenu Agent Family) in opdracht van Tiëndo, voor zijn broertje. Conceptvoorstel v1: Drive (10 sept 2026).
+Ontworpen door Genius (Parvenu Agent Family). Concept v1: 10 sept 2026.
