@@ -14,10 +14,15 @@ let STATE = {
   startedAt: null,
 };
 let vaderOptiesZichtbaar = false;
+let BORDEN = [];
 
 // ===== init =====
 async function init() {
   VRAGEN = await laadVragen();
+  try {
+    const rb = await fetch('borden.json');
+    BORDEN = (await rb.json()).borden;
+  } catch (e) { BORDEN = []; }
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('service-worker.js').catch(() => {});
   }
@@ -146,6 +151,10 @@ function toonHoofd() {
       <button class="modus-knop" onclick="toonVader()">
         <div class="modus-icoon">👨‍👦</div>
         <div><div class="modus-titel">Samen oefenen</div><div class="modus-sub">Vader-modus: jullie zitten naast elkaar</div></div>
+      </button>
+      <button class="modus-knop" onclick="startBorden()">
+        <div class="modus-icoon">🛑</div>
+        <div><div class="modus-titel">Verkeersborden</div><div class="modus-sub">Borden herkennen — gegarandeerd op het examen</div></div>
       </button>
       <button class="modus-knop" onclick="toonTrainer()">
         <div class="modus-icoon">🤖</div>
@@ -279,6 +288,24 @@ function strijderCoach(pct, antwoorden) {
   }
   if (slechtsteHfd) return `Het was zwaar, maar je weet nu waar het scheelt: <strong>${slechtsteHfd[0]}</strong>. Niet méér vragen vandaag — morgen precies 20 vragen uit de zwakke-plekken-modus. Klein en dagelijks wint van veel en af en toe.`;
   return `Zwaar? Prima — je weet nu waar je staat. Morgen 20 vragen, zwakke-plekken-modus. Klein en dagelijks wint.`;
+}
+
+// ===== borden-modus =====
+function startBorden() {
+  if (!BORDEN.length) { alert('Borden nog niet geladen.'); return; }
+  STATE.modus = 'snel';  // zelfde flow als snelle oefening (directe feedback)
+  STATE.rij = shuffle(BORDEN.map(b => ({
+    id: 'bord-' + b.bord.slice(0,20).replace(/\W/g,''),
+    hoofdstuk: 'borden (' + (b.categorie||'algemeen') + ')',
+    moeilijkheid: 2,
+    vraag: '🛑 ' + b.bord,
+    opties: b.opties,
+    juist: b.juist,
+    uitleg: b.uitleg,
+  }))).slice(0, 20);
+  STATE.huidige = 0;
+  STATE.antwoorden = [];
+  toonVraag();
 }
 
 // ===== vader-modus =====
