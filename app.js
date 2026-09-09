@@ -12,6 +12,8 @@ let STATE = {
   rij: [],
   antwoorden: [],
   startedAt: null,
+  druktrein: false,
+  timerId: null,
 };
 let vaderOptiesZichtbaar = false;
 let BORDEN = [];
@@ -125,6 +127,10 @@ function toonHoofd() {
       <div class="sub">Train. Slaag. Strijd.</div>
     </div>
 
+    <div class="meter-card" style="padding:16px 22px">
+      <div class="meter-tekst"><span>🔥 Streak</span><span class="groot" style="color:var(--goud)">${berekenStreak()} dagen</span></div>
+    </div>
+
     <div class="meter-card">
       <h2>Klaar voor examen?</h2>
       <div class="meter-bar"><div class="meter-vul" style="width:${pctVul}%; background:${kleur}"></div></div>
@@ -152,6 +158,14 @@ function toonHoofd() {
         <div class="modus-icoon">👨‍👦</div>
         <div><div class="modus-titel">Samen oefenen</div><div class="modus-sub">Vader-modus: jullie zitten naast elkaar</div></div>
       </button>
+      <button class="modus-knop" onclick="deelKaart()">
+        <div class="modus-icoon">📱</div>
+        <div><div class="modus-titel">Deel mijn voortgang</div><div class="modus-sub">Stuur je score naar de familie (WhatsApp)</div></div>
+      </button>
+      <button class="modus-knop" onclick="startDruktrein()">
+        <div class="modus-icoon">🔥</div>
+        <div><div class="modus-titel">Examen-druktrein</div><div class="modus-sub">Timer aan, geen hulp — zoals het echte examen</div></div>
+      </button>
       <button class="modus-knop" onclick="startBorden()">
         <div class="modus-icoon">🛑</div>
         <div><div class="modus-titel">Verkeersborden</div><div class="modus-sub">Borden herkennen — gegarandeerd op het examen</div></div>
@@ -161,6 +175,7 @@ function toonHoofd() {
         <div><div class="modus-titel">AI-trainer</div><div class="modus-sub">Genereer quizzen, stel vragen</div></div>
       </button>
     </div>
+    <div style="text-align:center;margin-top:20px;font-size:11px;color:var(--muted)">vragenbank 2026 · v1.1 · ${VRAGEN.length} vragen + ${BORDEN.length} borden</div>
   `;
 }
 
@@ -183,7 +198,7 @@ function toonVraag() {
   if (vaderModus && !vaderOptiesZichtbaar) {
     // fase 1 vader-modus: vraag zónder opties — vader leest hardop, kind denkt na
     app.innerHTML = `
-      <button class="terug" onclick="toonHoofd()">← Stoppen</button>
+      <button class="terug" onclick="clearInterval(STATE.timerId); toonHoofd()">← Stoppen</button>
       <div class="vraag-header">
         <span class="vraag-tag">${v.hoofdstuk} · niveau ${v.moeilijkheid}</span>
         <span class="vraag-vooruitgang">${STATE.huidige+1}/${STATE.rij.length}</span>
@@ -196,7 +211,7 @@ function toonVraag() {
   }
 
   app.innerHTML = `
-    <button class="terug" onclick="toonHoofd()">← Stoppen</button>
+    <button class="terug" onclick="clearInterval(STATE.timerId); toonHoofd()">← Stoppen</button>
     <div class="vraag-header">
       <span class="vraag-tag">${v.hoofdstuk} · niveau ${v.moeilijkheid}</span>
       <span class="vraag-vooruitgang">${STATE.huidige+1}/${STATE.rij.length}</span>
@@ -248,7 +263,7 @@ function toonResultaat() {
   const pct = tot ? Math.round(100*goed/tot) : 0;
   const klasse = pct >= 80 ? 'goed' : pct >= 60 ? 'mwa' : 'slecht';
 
-  if (STATE.modus === 'proef') {
+  if (STATE.modus === 'proef' || STATE.modus === 'druktrein') {
     const s = stats();
     s._proeven = s._proeven || [];
     s._proeven.push({datum: new Date().toISOString().slice(0,10), score: pct});
@@ -289,6 +304,143 @@ function strijderCoach(pct, antwoorden) {
   if (slechtsteHfd) return `Het was zwaar, maar je weet nu waar het scheelt: <strong>${slechtsteHfd[0]}</strong>. Niet méér vragen vandaag — morgen precies 20 vragen uit de zwakke-plekken-modus. Klein en dagelijks wint van veel en af en toe.`;
   return `Zwaar? Prima — je weet nu waar je staat. Morgen 20 vragen, zwakke-plekken-modus. Klein en dagelijks wint.`;
 }
+
+// ===== Slice 5: streak =====
+function berekenStreak() {
+  const s = stats();
+  const dagen = new Set();
+  Object.entries(s).forEach(([k, v]) => {
+    if (k !== '_proeven' && v.laatste) dagen.add(v.laatste);
+  });
+  (s._proeven || []).forEach(p => dagen.add(p.datum));
+  if (!dagen.size) return 0;
+  // tel terug vanaf vandaag (of gisteren als vandaag nog niet geoefend)
+  let streak = 0;
+  let dag = new Date();
+  const fmt = d => d.toISOString().slice(0,10);
+  if (!dagen.has(fmt(dag))) dag.setDate(dag.getDate() - 1);
+  while (dagen.has(fmt(dag))) {
+    streak++;
+    dag.setDate(dag.getDate() - 1);
+  }
+  return streak;
+}
+
+// ===== Slice 4: voortgangskaart delen =====
+function deelKaart() {
+  const proeven = proefGeschiedenis();
+  const laatste3 = proeven.slice(-3);
+  const gem = laatste3.length ? Math.round(laatste3.reduce((a,p)=>a+p.score,0)/laatste3.length) : 0;
+  const klaar = laatste3.length >= 3 && laatste3.every(p => p.score >= 70);
+  const streak = berekenStreak();
+
+  const canvas = document.createElement('canvas');
+  canvas.width = 800; canvas.height = 420;
+  const ctx = canvas.getContext('2d');
+  // achtergrond
+  ctx.fillStyle = '#0a0e1a'; ctx.fillRect(0,0,800,420);
+  ctx.fillStyle = '#4f8cff'; ctx.fillRect(0,0,800,8);
+  // titel
+  ctx.fillStyle = '#e8ecf4'; ctx.font = 'bold 44px sans-serif'; ctx.textAlign = 'center';
+  ctx.fillText('⚔️ STRIJDER', 400, 80);
+  ctx.fillStyle = '#8b94ab'; ctx.font = '18px sans-serif';
+  ctx.fillText('CBR theorie-training van de Parvenu-fabriek', 400, 112);
+  // grote score
+  ctx.fillStyle = klaar ? '#3ecf8e' : gem >= 70 ? '#ffc857' : '#4f8cff';
+  ctx.font = 'bold 110px sans-serif';
+  ctx.fillText((gem || 0) + '%', 400, 250);
+  ctx.fillStyle = '#8b94ab'; ctx.font = '20px sans-serif';
+  ctx.fillText(klaar ? 'KLAAR VOOR HET EXAMEN' : 'gemiddelde laatste ' + laatste3.length + ' proefexamens', 400, 290);
+  // streak + status
+  ctx.fillStyle = '#ffc857'; ctx.font = 'bold 26px sans-serif';
+  ctx.fillText('🔥 ' + streak + ' dagen op rij', 400, 340);
+  ctx.fillStyle = '#8b94ab'; ctx.font = '16px sans-serif';
+  ctx.fillText(new Date().toLocaleDateString('nl-NL'), 400, 385);
+
+  canvas.toBlob(function(blob) {
+    const file = new File([blob], 'strijder-voortgang.png', {type: 'image/png'});
+    if (navigator.share && navigator.canShare && navigator.canShare({files: [file]})) {
+      navigator.share({files: [file], title: 'Mijn Strijder-voortgang'}).catch(() => {});
+    } else {
+      // fallback: download de afbeelding
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = 'strijder-voortgang.png';
+      a.click();
+    }
+  });
+}
+
+// ===== examen-druktrein (Slice 3) =====
+function startDruktrein() {
+  STATE.modus = 'druktrein';
+  STATE.rij = shuffle([...VRAGEN]).slice(0, 30);
+  STATE.huidige = 0;
+  STATE.antwoorden = [];
+  STATE.druktrein = true;
+  STATE.startedAt = Date.now();
+  // CBR-realistisch: ~12 sec per vraag
+  STATE.eindTijd = Date.now() + STATE.rij.length * 12 * 1000;
+  toonVraagDruk();
+  STATE.timerId = setInterval(tikDruk, 1000);
+}
+
+function tikDruk() {
+  const resterend = Math.max(0, STATE.eindTijd - Date.now());
+  const el = document.querySelector('#druk-timer');
+  if (el) {
+    const m = Math.floor(resterend / 60000);
+    const s = Math.floor((resterend % 60000) / 1000);
+    el.textContent = m + ':' + String(s).padStart(2, '0');
+    el.style.color = resterend < 60000 ? 'var(--fout)' : resterend < 120000 ? 'var(--goud)' : 'var(--goed)';
+    if (navigator.vibrate && resterend < 30000 && resterend > 29500) navigator.vibrate(300);
+  }
+  if (resterend <= 0) {
+    clearInterval(STATE.timerId);
+    // tijd voorbij: niet-beantwoorde vragen = fout
+    while (STATE.huidige < STATE.rij.length) {
+      STATE.antwoorden.push({id: STATE.rij[STATE.huidige].id, juist: false, gegeven: -1});
+      STATE.huidige++;
+    }
+    toonResultaat();
+  }
+}
+
+function toonVraagDruk() {
+  const v = STATE.rij[STATE.huidige];
+  if (!v) { clearInterval(STATE.timerId); toonResultaat(); return; }
+  const letters = ['A','B','C','D'];
+  app.innerHTML = `
+    <div class="vraag-header">
+      <span id="druk-timer" style="font-size:22px;font-weight:800;font-variant-numeric:tabular-nums">--:--</span>
+      <span class="vraag-vooruitgang">${STATE.huidige+1}/${STATE.rij.length} · GEEN feedback tussendoor</span>
+    </div>
+    <div class="vraag-tekst">${v.vraag}</div>
+    ${v.opties.map((o, i) => `
+      <button class="optie" data-i="${i}" onclick="antwoordDruk(${i})">
+        <span class="letter">${letters[i]}</span> ${o}
+      </button>
+    `).join('')}
+  `;
+  tikDruk();
+}
+
+function antwoordDruk(i) {
+  const v = STATE.rij[STATE.huidige];
+  const juist = i === v.juist;
+  STATE.antwoorden.push({id: v.id, juist, gegeven: i});
+  registreer({id: v.id, juist});
+  STATE.huidige++;
+  if (STATE.huidige >= STATE.rij.length) {
+    clearInterval(STATE.timerId);
+    toonResultaat();
+  } else {
+    toonVraagDruk();
+  }
+}
+
+// resultaat: druktrein telt mee als proefexamen
+// (in toonResultaat: modus 'druktrein' ook opslaan bij _proeven)
 
 // ===== borden-modus =====
 function startBorden() {
