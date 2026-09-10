@@ -118,11 +118,11 @@ function toonHoofd() {
   const pctVul = klaar ? 100 : (gem || 0);
 
   const kleur = klaar ? 'var(--goed)' : gem >= 70 ? 'var(--goud)' : 'var(--accent)';
-  const label = klaar ? 'KLAAR VOOR EXAMEN ⚔️' : gem !== null ? `${gem}% gemiddeld (laatste 3 proeven)` : 'Maak eerst een proefexamen';
+  const label = klaar ? 'KLAAR VOOR EXAMEN 🍥' : gem !== null ? `${gem}% gemiddeld (laatste 3 proeven)` : 'Maak eerst een proefexamen';
 
   app.innerHTML = `
     <div class="hero">
-      <div class="logo">⚔️</div>
+      <div class="logo">🍥</div>
       <h1>STRIJDER</h1>
       <div class="sub">Train. Slaag. Strijd.</div>
     </div>
@@ -139,23 +139,23 @@ function toonHoofd() {
 
     <div class="modi">
       <button class="modus-knop" onclick="start('snel')">
-        <div class="modus-icoon">⚡</div>
+        <div class="modus-icoon">🌀</div>
         <div><div class="modus-titel">Snelle oefening</div><div class="modus-sub">20 vragen, directe feedback</div></div>
       </button>
       <button class="modus-knop" onclick="start('proef')">
-        <div class="modus-icoon">🎯</div>
+        <div class="modus-icoon">🌀</div>
         <div><div class="modus-titel">Proefexamen</div><div class="modus-sub">CBR-formaat, score aan het eind</div></div>
       </button>
       <button class="modus-knop" onclick="start('zwak')">
-        <div class="modus-icoon">🎯</div>
+        <div class="modus-icoon">🌀</div>
         <div><div class="modus-titel">Zwakke plekken</div><div class="modus-sub">Alleen waar je onder de 70% zit</div></div>
       </button>
       <button class="modus-knop" onclick="start('herhaal')">
-        <div class="modus-icoon">🔁</div>
+        <div class="modus-icoon">🥷</div>
         <div><div class="modus-titel">Herhalen</div><div class="modus-sub">Vragen die je eerder fout had</div></div>
       </button>
       <button class="modus-knop" onclick="toonVader()">
-        <div class="modus-icoon">👨‍👦</div>
+        <div class="modus-icoon">🍥</div>
         <div><div class="modus-titel">Samen oefenen</div><div class="modus-sub">Vader-modus: jullie zitten naast elkaar</div></div>
       </button>
       <button class="modus-knop" onclick="deelKaart()">
@@ -171,7 +171,7 @@ function toonHoofd() {
         <div><div class="modus-titel">Verkeersborden</div><div class="modus-sub">Borden herkennen — gegarandeerd op het examen</div></div>
       </button>
       <button class="modus-knop" onclick="toonTrainer()">
-        <div class="modus-icoon">🤖</div>
+        <div class="modus-icoon">🥷</div>
         <div><div class="modus-titel">AI-trainer</div><div class="modus-sub">Genereer quizzen, stel vragen</div></div>
       </button>
     </div>
@@ -216,7 +216,7 @@ function toonVraag() {
       <span class="vraag-tag">${v.hoofdstuk} · niveau ${v.moeilijkheid}</span>
       <span class="vraag-vooruitgang">${STATE.huidige+1}/${STATE.rij.length}</span>
     </div>
-    ${vaderModus ? `<div class="coach-box"><div class="rol">👨‍👦</div><div class="tekst">Vader: laat hem kiezen en vraag wáárom. Eerst praten, dan doorklikken.</div></div>` : ''}
+    ${vaderModus ? `<div class="coach-box"><div class="rol">🍥</div><div class="tekst">Vader: laat hem kiezen en vraag wáárom. Eerst praten, dan doorklikken.</div></div>` : ''}
     <div class="vraag-tekst">${v.vraag}</div>
     ${v.opties.map((o, i) => `
       <button class="optie" data-i="${i}" onclick="antwoord(${i})">
@@ -279,7 +279,7 @@ function toonResultaat() {
       <div class="resultaat-sub">${goed} van ${tot} goed — ${STATE.modus === 'proef' ? 'PROEFEXAMEN' : 'oefening'}</div>
     </div>
     <div class="coach-box">
-      <div class="rol">⚔️ DE STRIJDER-COACH</div>
+      <div class="rol">🍥 DE STRIJDER-COACH · NINJA-MODE</div>
       <div class="tekst">${coach}</div>
     </div>
     ${STATE.modus === 'vader' ? `<div class="coach-box"><div class="rol">👨‍👦 VOOR VADER</div><div class="tekst">Praat dit even door: wat ging goed, wat was lastig? Samen beslissen wat morgen de focus is.</div></div>` : ''}
@@ -338,15 +338,15 @@ function deelKaart() {
   canvas.width = 800; canvas.height = 420;
   const ctx = canvas.getContext('2d');
   // achtergrond
-  ctx.fillStyle = '#0a0e1a'; ctx.fillRect(0,0,800,420);
-  ctx.fillStyle = '#4f8cff'; ctx.fillRect(0,0,800,8);
+  ctx.fillStyle = '#0d0d0d'; ctx.fillRect(0,0,800,420);
+  ctx.fillStyle = '#ff7a1a'; ctx.fillRect(0,0,800,8);
   // titel
   ctx.fillStyle = '#e8ecf4'; ctx.font = 'bold 44px sans-serif'; ctx.textAlign = 'center';
-  ctx.fillText('⚔️ STRIJDER', 400, 80);
+  ctx.fillText('🍥 STRIJDER', 400, 80);
   ctx.fillStyle = '#8b94ab'; ctx.font = '18px sans-serif';
   ctx.fillText('CBR theorie-training van de Parvenu-fabriek', 400, 112);
   // grote score
-  ctx.fillStyle = klaar ? '#3ecf8e' : gem >= 70 ? '#ffc857' : '#4f8cff';
+  ctx.fillStyle = klaar ? '#3ecf8e' : gem >= 70 ? '#ffc857' : '#ff7a1a';
   ctx.font = 'bold 110px sans-serif';
   ctx.fillText((gem || 0) + '%', 400, 250);
   ctx.fillStyle = '#8b94ab'; ctx.font = '20px sans-serif';
@@ -476,19 +476,19 @@ function toonTrainer() {
   app.innerHTML = `
     <button class="terug" onclick="toonHoofd()">← Terug naar hoofd</button>
     <div class="hero" style="padding:20px 0 10px">
-      <div class="logo">🤖</div>
+      <div class="logo">🥷</div>
       <h1 style="font-size:24px">AI-TRAINER</h1>
       <div class="sub">GLM Flash — maakt quizzen, beantwoordt vragen</div>
     </div>
     <div class="meter-card" style="margin-bottom:16px">
       <h2>OpenRouter API-key (blijft op dit toestel)</h2>
-      <input id="or-key" type="password" value="${key}" placeholder="sk-or-..." style="width:100%;background:#0d1322;border:1px solid #1e2742;border-radius:10px;padding:12px;color:var(--ink);font-size:14px;margin-top:10px">
+      <input id="or-key" type="password" value="${key}" placeholder="sk-or-..." style="width:100%;background:#0d1322;border:1px solid #2b2b2b;border-radius:10px;padding:12px;color:var(--ink);font-size:14px;margin-top:10px">
       <button class="knop-volgende" style="margin-top:10px" onclick="bewaarKey()">Key bewaren (lokaal)</button>
     </div>
     <div id="trainer-chat"></div>
     <div class="modi">
       <button class="modus-knop" onclick="trainerActie('genereer')">
-        <div class="modus-icoon">📝</div>
+        <div class="modus-icoon">📜</div>
         <div><div class="modus-titel">Genereer 10 nieuwe vragen</div><div class="modus-sub">AI maakt een quiz op maat</div></div>
       </button>
       <button class="modus-knop" onclick="trainerActie('uitleg')">

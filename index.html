@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-<meta name="theme-color" content="#0a0e1a">
+<meta name="theme-color" content="#0d0d0d">
 <title>Strijder — CBR Theorie-oefening</title>
 <link rel="manifest" href="manifest.json">
 <style>
   :root {
-    --bg: #0a0e1a; --card: #131a2e; --ink: #e8ecf4; --muted: #8b94ab;
-    --accent: #4f8cff; --goed: #3ecf8e; --fout: #ff5c72; --goud: #ffc857;
+    --bg: #0d0d0d; --card: #1a1a1a; --ink: #e8ecf4; --muted: #8b94ab;
+    --accent: #ff7a1a; --goed: #3ecf8e; --fout: #ff5c72; --goud: #ffb347;
   }
   * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
   body { background: var(--bg); color: var(--ink); font-family: -apple-system, sans-serif; min-height: 100vh; }
@@ -23,7 +23,7 @@
 
   .meter-card { background: var(--card); border-radius: 20px; padding: 22px; margin-top: 18px; }
   .meter-card h2 { font-size: 14px; text-transform: uppercase; letter-spacing: 1px; color: var(--muted); }
-  .meter-bar { background: #0d1322; border-radius: 999px; height: 14px; margin: 14px 0 10px; overflow: hidden; }
+  .meter-bar { background: #111111; border-radius: 999px; height: 14px; margin: 14px 0 10px; overflow: hidden; }
   .meter-vul { height: 100%; border-radius: 999px; transition: width .6s ease; }
   .meter-tekst { display: flex; justify-content: space-between; font-size: 13px; }
   .meter-tekst .groot { font-size: 20px; font-weight: 700; }
@@ -31,7 +31,7 @@
   .modi { display: grid; gap: 12px; margin-top: 18px; }
   .modus-knop {
     display: flex; align-items: center; gap: 16px; background: var(--card);
-    border: 1px solid #1e2742; border-radius: 18px; padding: 18px; cursor: pointer;
+    border: 1px solid #2b2b2b; border-radius: 18px; padding: 18px; cursor: pointer;
     transition: transform .1s; text-align: left; width: 100%; color: var(--ink);
   }
   .modus-knop:active { transform: scale(.98); }
@@ -41,15 +41,15 @@
 
   /* === vraag-scherm === */
   .vraag-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; }
-  .vraag-tag { background: #1e2742; color: var(--accent); padding: 6px 12px; border-radius: 999px; font-size: 12px; font-weight: 600; }
+  .vraag-tag { background: #2b2b2b; color: var(--accent); padding: 6px 12px; border-radius: 999px; font-size: 12px; font-weight: 600; }
   .vraag-vooruitgang { color: var(--muted); font-size: 13px; }
   .vraag-tekst { font-size: 19px; line-height: 1.45; font-weight: 600; margin-bottom: 22px; }
   .optie {
     display: flex; align-items: center; gap: 12px; background: var(--card);
-    border: 2px solid #1e2742; border-radius: 14px; padding: 16px; margin-bottom: 10px;
+    border: 2px solid #2b2b2b; border-radius: 14px; padding: 16px; margin-bottom: 10px;
     cursor: pointer; transition: all .15s; width: 100%; color: var(--ink); font-size: 15px; text-align: left;
   }
-  .optie .letter { background: #1e2742; color: var(--accent); font-weight: 800; border-radius: 10px; width: 34px; height: 34px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .optie .letter { background: #2b2b2b; color: var(--accent); font-weight: 800; border-radius: 10px; width: 34px; height: 34px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
   .optie.juist { border-color: var(--goed); background: rgba(62,207,142,.08); }
   .optie.juist .letter { background: var(--goed); color: #06281a; }
   .optie.verkeerd { border-color: var(--fout); background: rgba(255,92,114,.08); }
@@ -69,7 +69,7 @@
   .coach-box .rol { font-size: 12px; color: var(--goud); text-transform: uppercase; letter-spacing: 1px; font-weight: 700; margin-bottom: 8px; }
   .coach-box .tekst { font-size: 15px; line-height: 1.55; }
   .stats-lijst { margin-top: 16px; }
-  .stat-rij { display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid #1e2742; font-size: 14px; }
+  .stat-rij { display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid #2b2b2b; font-size: 14px; }
   .stat-rij:last-child { border-bottom: none; }
   .stat-waarde { font-weight: 700; }
 
